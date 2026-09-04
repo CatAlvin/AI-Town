@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "version": "0.3.3",
+  "slot": 0,
+  "saveId": "save-1788381795997-0",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-09-02T20:43:16.001Z",
+  "playSeconds": 0,
+  "location": "bellvale",
+  "checkpoint": {
+    "area": "bellvale",
+    "x": 920,
+    "y": 650
+  },
+  "player": {
+    "name": "绒火",
+    "paletteId": "ember-red",
+    "x": 920,
+    "y": 650,
+    "hp": 6,
+    "maxHp": 6,
+    "stamina": 100,
+    "coins": 12,
+    "attackLevel": 1,
+    "inventoryCapacity": 24
+  },
+  "time": {
+    "day": 1,
+    "segmentIndex": 0
+  },
+  "weather": "晴朗",
+  "mainStage": 0,
+  "flags": {},
+  "completedSideQuests": [],
+  "defeated": {},
+  "openedPickups": {},
+  "inventory": {
+    "moonHerb": 2,
+    "honeyBread": 1
+  },
+  "equipment": {},
+  "upgrades": [],
+  "npcState": {
+    "vella": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "主线",
+      "memories": []
+    },
+    "hazel": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "升级",
+      "memories": []
+    },
+    "milu": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "商店",
+      "memories": []
+    },
+    "loran": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "战斗",
+      "memories": []
+    },
+    "antla": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "草药",
+      "memories": []
+    },
+    "owen": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "记忆",
+      "memories": []
+    },
+    "sable": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "桥",
+      "memories": []
+    },
+    "moss": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "旅店",
+      "memories": []
+    }
+  },
+  "rumors": [],
+  "questLog": [
+    {
+      "id": "stage-1",
+      "title": "找回见习铃牌",
+      "status": "active",
+      "text": "在暖角旅店找到见习铃牌，并回到失声月铃塔前。"
+    }
+  ],
+  "completedLog": [],
+  "autosaveLog": [],
+  "settings": {
+    "volume": 0.7,
+    "musicVolume": 0.55,
+    "sfxVolume": 0.85,
+    "muted": false,
+    "textSpeed": 1,
+    "brightness": 1,
+    "screenShake": true,
+    "reduceMotion": false,
+    "fullscreenHintSeen": false,
+    "difficulty": "标准",
+    "fontScale": 1
+  },
+  "ending": null,
+  "checksum": "26d3c87a"
+}

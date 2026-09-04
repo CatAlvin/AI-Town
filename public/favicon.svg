@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">绒火与月铃图标</title>
+  <desc id="desc">月铃塔、铃铛和绒火尾焰组成的游戏图标。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#24385c" />
+      <stop offset="0.52" stop-color="#456b67" />
+      <stop offset="1" stop-color="#d38c4b" />
+    </linearGradient>
+    <linearGradient id="flame" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff1a9" />
+      <stop offset="0.48" stop-color="#f08a48" />
+      <stop offset="1" stop-color="#963f38" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)" />
+  <circle cx="360" cy="126" r="64" fill="#ffe7a4" />
+  <path d="M236 404 L314 404 L300 162 L274 78 L248 162 Z" fill="#6c5360" />
+  <path d="M252 172 L298 172 L288 404 L262 404 Z" fill="#c18a64" />
+  <circle cx="276" cy="218" r="30" fill="#f7d988" />
+  <path d="M258 218 C266 206 286 206 294 218 C286 232 266 232 258 218 Z" fill="#684746" />
+  <path d="M216 404 L334 404 L360 454 L190 454 Z" fill="#40313d" />
+  <path d="M170 366 C80 302 104 198 198 184 C176 240 198 294 264 350 C232 356 200 362 170 366 Z" fill="url(#flame)" />
+  <path d="M190 340 C142 298 146 242 206 220 C202 266 222 306 270 346 C244 342 216 340 190 340 Z" fill="#ffd37c" opacity="0.86" />
+  <path d="M112 112 L154 60 L196 112 L180 154 L128 154 Z" fill="#c76745" />
+  <path d="M128 154 C138 130 170 130 180 154 C168 174 140 174 128 154 Z" fill="#1d2226" />
+</svg>

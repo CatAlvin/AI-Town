@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>绒火与月铃</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=0.3.3" />
+    <link rel="stylesheet" href="/styles.css?v=0.3.3" />
+  </head>
+  <body>
+    <noscript>
+      <section class="compat-screen">
+        <div class="compat-card">
+          <p class="eyebrow">绒火与月铃</p>
+          <h1>需要启用 JavaScript</h1>
+          <p>这是一款浏览器 Canvas 游戏。请启用 JavaScript，并使用桌面 Chromium 或 Firefox 打开。</p>
+        </div>
+      </section>
+    </noscript>
+
+    <section id="compatFallback" class="compat-screen" hidden>
+      <div class="compat-card">
+        <p class="eyebrow">绒火与月铃</p>
+        <h1>当前浏览器无法运行游戏</h1>
+        <p>请使用支持 ES Modules、Canvas、localStorage 和 Fetch 的桌面 Chromium 或 Firefox。</p>
+      </div>
+    </section>
+
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loading-card">
+        <p class="eyebrow">绒火与月铃</p>
+        <h1>正在点亮月铃塔</h1>
+        <div class="loading-bar"><span></span></div>
+        <p id="loadingStatus">载入规则、地图和存档...</p>
+      </div>
+    </div>
+
+    <main id="app" class="app" hidden>
+      <section id="titleScreen" class="title-screen screen">
+        <div class="hero-copy">
+          <p class="eyebrow">Furry 中世纪冒险</p>
+          <h1>绒火与月铃</h1>
+          <p class="hero-text">
+            扮演见习守铃者绒火，穿过聚落、森林、河岸、遗迹与塔顶，帮助居民、击退夜铃残响，修复失声的月铃塔。
+          </p>
+          <div class="title-actions">
+            <button id="newGameBtn" class="primary">开始游戏</button>
+            <button id="aiTownBtn" class="primary">AI小镇自主运行</button>
+            <button id="continueBtn">继续</button>
+            <button id="saveMenuBtn">存档</button>
+            <button id="settingsBtn">设置</button>
+            <button id="creditsBtn">制作人员</button>
+          </div>
+          <p class="browser-note">建议使用桌面 Chromium 或 Firefox。移动端可浏览作品页，但完整操作以键盘为准。</p>
+        </div>
+        <div class="hero-scene" aria-label="游戏画面预览">
+          <canvas id="previewCanvas" width="720" height="480"></canvas>
+        </div>
+      </section>
+
+      <section id="gameScreen" class="game-screen screen" hidden>
+        <header class="game-hud">
+          <div>
+            <p class="eyebrow" id="areaKind">主要区域</p>
+            <h2 id="areaName">月铃聚落</h2>
+          </div>
+          <div class="bars">
+            <div class="meter"><span>生命</span><b id="hpBar"></b></div>
+            <div class="meter stamina"><span>体力</span><b id="staminaBar"></b></div>
+          </div>
+          <div class="hud-meta">
+            <span id="timeLabel">第 1 日 清晨</span>
+            <span id="weatherLabel">晴朗</span>
+            <span id="autosaveLabel">未保存</span>
+          </div>
+          <div class="hud-buttons">
+            <button id="questBtn" title="任务日志">任务</button>
+            <button id="inventoryBtn" title="背包">背包</button>
+            <button id="pauseBtn" title="暂停">暂停</button>
+          </div>
+        </header>
+
+        <div class="play-layout">
+          <div class="canvas-wrap">
+            <canvas id="gameCanvas" width="1280" height="720" aria-label="绒火与月铃游戏画面"></canvas>
+            <div id="prompt" class="prompt" hidden></div>
+            <div id="toast" class="toast" aria-live="polite"></div>
+          </div>
+          <aside class="side-panel" aria-label="游戏状态">
+            <section>
+              <p class="eyebrow">当前目标</p>
+              <h3 id="questTitle">找回见习铃牌</h3>
+              <p id="questText">在暖角旅店找到见习铃牌，并回到失声月铃塔前。</p>
+            </section>
+            <section>
+              <p class="eyebrow">控制</p>
+              <div class="control-grid">
+                <span>移动</span><b>WASD / 方向键</b>
+                <span>交互</span><b>E</b>
+                <span>攻击</span><b>J / 空格</b>
+                <span>闪避</span><b>Shift / K</b>
+                <span>暂停</span><b>Esc</b>
+              </div>
+            </section>
+            <section>
+              <p class="eyebrow">最近记录</p>
+              <div id="messageLog" class="message-log"></div>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <section id="modalLayer" class="modal-layer" hidden>
+        <div class="modal">
+          <header>
+            <h2 id="modalTitle">菜单</h2>
+            <button id="closeModalBtn" class="icon-only" aria-label="关闭">×</button>
+          </header>
+          <div id="modalBody" class="modal-body"></div>
+        </div>
+      </section>
+    </main>
+
+    <input id="importFile" type="file" accept="application/json" hidden />
+    <script nomodule>
+      document.getElementById("loadingScreen").hidden = true;
+      document.getElementById("compatFallback").hidden = false;
+    </script>
+    <script type="module" src="/app.js?v=0.3.3"></script>
+  </body>
+</html>

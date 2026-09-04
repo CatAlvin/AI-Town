@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "title": "绒火与月铃",
+  "gameVersion": "0.3.3",
+  "generatedAt": "2026-08-25T01:27:00.950Z",
+  "branch": "main",
+  "commit": "29cfa76",
+  "screenshotDir": "docs/acceptance/screenshots",
+  "coverage": {
+    "required": 7,
+    "covered": 7,
+    "complete": true
+  },
+  "minimumImageSize": {
+    "width": 320,
+    "height": 180
+  },
+  "files": [
+    {
+      "file": "docs/acceptance/screenshots/01-title.png",
+      "bytes": 283112,
+      "width": 1264,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "879d2b363487ec9644af70f7665e7ee17b82209e4b9297a1763b6e00294de729",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/02-settings.png",
+      "bytes": 268584,
+      "width": 1264,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "0e9dbe9ef3b2f5e0c4d0fa5b6831eab0dc142190f73e7338e4b38098d9b3e400",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/03-village.png",
+      "bytes": 309198,
+      "width": 1264,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "00d9dac74f02b5c05f1e13fa604e7a3a1914aa165d4b82f569fa1cbdff321bdd",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/04-quest-log.png",
+      "bytes": 336710,
+      "width": 1264,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "f7fa7a512680670c8085b5e1fec7d783acfa4a6c2ed993f56798d5e79f01c0fc",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/05-inventory.png",
+      "bytes": 265012,
+      "width": 1264,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "b31fe93fb9d74d89507a99df39ab860586973be860452797a94be9eaf38f8389",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/06-save-slots.png",
+      "bytes": 307679,
+      "width": 1264,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "370051fd0a32224ede163286371f233acdb35f28fd120c313435dbd5080d2698",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/07-forest-combat.png",
+      "bytes": 113930,
+      "width": 1280,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "a992aece7b20b4c3daa513f0353c5721159b468823bf15321d0ad4421795e84e",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/08-river-weather.png",
+      "bytes": 124197,
+      "width": 1280,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "acc3eac0b03e0189eb0ef614d768ad5f749201c75b327e35fa84e8ba4531a891",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/09-ruins-boss.png",
+      "bytes": 109416,
+      "width": 1280,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "682c91ed18a12a1249f842add6004d60166952d50e28b528b8238296dc6a1518",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/10-moonspire-boss.png",
+      "bytes": 109691,
+      "width": 1280,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "4443f97ba4f75c036247913209e796daa4ff2ffe781efdf7f6eb61588631dc12",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/11-ending.png",
+      "bytes": 117496,
+      "width": 1280,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "b84d0325bd236d9efa82a11ca00874a80ca4f67be9e4bbf9c4efde1932aea3ae",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/12-title-audio-v033.png",
+      "bytes": 111950,
+      "width": 1280,
+      "height": 720,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "5ff060b07cb3748ce9a9ffe2c68534e54c5e63139b0219493b0cb09a2b5b6e9c",
+      "valid": true
+    },
+    {
+      "file": "docs/acceptance/screenshots/ai-town-autonomous.png",
+      "bytes": 160238,
+      "width": 1280,
+      "height": 900,
+      "bitDepth": 8,
+      "colorType": 2,
+      "sha256": "c371f267b012ff05db7703036fdc46453ede97bbdf3b4e5805f8d8c010483234",
+      "valid": true
+    }
+  ]
+}

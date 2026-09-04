@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 2,
+  "version": "0.3.3",
+  "slot": 0,
+  "saveId": "sample-midgame",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-09-02T20:43:16.002Z",
+  "playSeconds": 0,
+  "location": "riverfarm",
+  "checkpoint": {
+    "area": "riverfarm",
+    "x": 890,
+    "y": 110
+  },
+  "player": {
+    "name": "绒火",
+    "paletteId": "ember-red",
+    "x": 890,
+    "y": 110,
+    "hp": 6,
+    "maxHp": 6,
+    "stamina": 100,
+    "coins": 12,
+    "attackLevel": 1,
+    "inventoryCapacity": 24
+  },
+  "time": {
+    "day": 1,
+    "segmentIndex": 0
+  },
+  "weather": "晴朗",
+  "mainStage": 2,
+  "flags": {
+    "hasQuestLog": true,
+    "bridgeFixed": true
+  },
+  "completedSideQuests": [],
+  "defeated": {},
+  "openedPickups": {},
+  "inventory": {
+    "moonHerb": 2,
+    "honeyBread": 1,
+    "moonBadge": 1
+  },
+  "equipment": {},
+  "upgrades": [
+    "softPawBoots"
+  ],
+  "npcState": {
+    "vella": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "主线",
+      "memories": []
+    },
+    "hazel": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "升级",
+      "memories": []
+    },
+    "milu": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "商店",
+      "memories": []
+    },
+    "loran": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "战斗",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 绒火树脂 x2",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《修复断桥根须》",
+          "day": 1
+        }
+      ]
+    },
+    "antla": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "草药",
+      "memories": []
+    },
+    "owen": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "记忆",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 见习铃牌 x1",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《找回见习铃牌》",
+          "day": 1
+        }
+      ]
+    },
+    "sable": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "桥",
+      "memories": []
+    },
+    "moss": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "旅店",
+      "memories": []
+    }
+  },
+  "rumors": [],
+  "questLog": [
+    {
+      "id": "stage-1",
+      "title": "找回见习铃牌",
+      "status": "done",
+      "text": "在暖角旅店找到见习铃牌，并回到失声月铃塔前。"
+    },
+    {
+      "id": "stage-2",
+      "title": "修复断桥根须",
+      "status": "done",
+      "text": "击退森林里的刺藤，带 2 份绒火树脂修复旧桥。"
+    },
+    {
+      "id": "stage-3",
+      "title": "让月露水车重新转动",
+      "status": "active",
+      "text": "找到水轮齿片并交给琥芽，恢复河岸水车。"
+    }
+  ],
+  "completedLog": [
+    {
+      "id": "stage-1",
+      "title": "找回见习铃牌",
+      "at": "2026-09-02T20:43:15.997Z"
+    },
+    {
+      "id": "stage-2",
+      "title": "修复断桥根须",
+      "at": "2026-09-02T20:43:15.998Z"
+    }
+  ],
+  "autosaveLog": [
+    {
+      "reason": "area:inn",
+      "at": "2026-09-02T20:43:15.997Z",
+      "location": "inn",
+      "stage": 0
+    },
+    {
+      "reason": "main:stage-1",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "inn",
+      "stage": 1
+    },
+    {
+      "reason": "area:emberwood",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "emberwood",
+      "stage": 1
+    },
+    {
+      "reason": "main:stage-2",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "emberwood",
+      "stage": 2
+    },
+    {
+      "reason": "area:riverfarm",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "riverfarm",
+      "stage": 2
+    }
+  ],
+  "settings": {
+    "volume": 0.7,
+    "musicVolume": 0.55,
+    "sfxVolume": 0.85,
+    "muted": false,
+    "textSpeed": 1,
+    "brightness": 1,
+    "screenShake": true,
+    "reduceMotion": false,
+    "fullscreenHintSeen": false,
+    "difficulty": "标准",
+    "fontScale": 1
+  },
+  "ending": null,
+  "lastMessage": "抵达 月露河岸",
+  "checksum": "e8750ebd"
+}

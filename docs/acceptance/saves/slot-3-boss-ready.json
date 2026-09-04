@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 2,
+  "version": "0.3.3",
+  "slot": 0,
+  "saveId": "sample-midgame",
+  "createdAt": "2026-06-26T00:00:00.000Z",
+  "updatedAt": "2026-09-02T20:43:16.003Z",
+  "playSeconds": 0,
+  "location": "moonspire",
+  "checkpoint": {
+    "area": "moonspire",
+    "x": 130,
+    "y": 620
+  },
+  "player": {
+    "name": "绒火",
+    "paletteId": "ember-red",
+    "x": 130,
+    "y": 620,
+    "hp": 6,
+    "maxHp": 6,
+    "stamina": 100,
+    "coins": 20,
+    "attackLevel": 1,
+    "inventoryCapacity": 24
+  },
+  "time": {
+    "day": 1,
+    "segmentIndex": 0
+  },
+  "weather": "晴朗",
+  "mainStage": 5,
+  "flags": {
+    "hasQuestLog": true,
+    "bridgeFixed": true,
+    "waterwheelFixed": true,
+    "spireUnlocked": true,
+    "sq-scarf": true,
+    "sq-price": true,
+    "villageUnited": true
+  },
+  "completedSideQuests": [
+    "sq-scarf",
+    "sq-price"
+  ],
+  "defeated": {
+    "echo-guardian": 1
+  },
+  "openedPickups": {},
+  "inventory": {
+    "moonHerb": 2,
+    "honeyBread": 1,
+    "moonBadge": 1,
+    "starGlyph": 1
+  },
+  "equipment": {
+    "rainCharm": true
+  },
+  "upgrades": [
+    "softPawBoots",
+    "bellStrike",
+    "lanternCore"
+  ],
+  "npcState": {
+    "vella": {
+      "trust": 5,
+      "mood": "平静",
+      "need": "主线",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 星骨符片 x1",
+          "day": 1
+        },
+        {
+          "type": "combat",
+          "text": "击败 回声守卫",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《点亮回声祭台》",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "获得了 暮羽 x1",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "完成支线《薇萝的旧围巾》：薇萝在终局前提示好结局风险，守铃信任 +3。",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《集结月铃居民》",
+          "day": 1
+        }
+      ]
+    },
+    "hazel": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "升级",
+      "memories": []
+    },
+    "milu": {
+      "trust": 5,
+      "mood": "平静",
+      "need": "商店",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 河岸南瓜 x1",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "完成支线《米露的小摊账》：商店价格降低，米露会传播正面传闻。",
+          "day": 1
+        }
+      ]
+    },
+    "loran": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "战斗",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 绒火树脂 x2",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《修复断桥根须》",
+          "day": 1
+        }
+      ]
+    },
+    "antla": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "草药",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 水轮齿片 x1",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《让月露水车重新转动》",
+          "day": 1
+        }
+      ]
+    },
+    "owen": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "记忆",
+      "memories": [
+        {
+          "type": "help",
+          "text": "获得了 见习铃牌 x1",
+          "day": 1
+        },
+        {
+          "type": "help",
+          "text": "推进主线《找回见习铃牌》",
+          "day": 1
+        }
+      ]
+    },
+    "sable": {
+      "trust": 1,
+      "mood": "平静",
+      "need": "桥",
+      "memories": []
+    },
+    "moss": {
+      "trust": 2,
+      "mood": "忙碌",
+      "need": "旅店",
+      "memories": []
+    }
+  },
+  "rumors": [],
+  "questLog": [
+    {
+      "id": "stage-1",
+      "title": "找回见习铃牌",
+      "status": "done",
+      "text": "在暖角旅店找到见习铃牌，并回到失声月铃塔前。"
+    },
+    {
+      "id": "stage-2",
+      "title": "修复断桥根须",
+      "status": "done",
+      "text": "击退森林里的刺藤，带 2 份绒火树脂修复旧桥。"
+    },
+    {
+      "id": "stage-3",
+      "title": "让月露水车重新转动",
+      "status": "done",
+      "text": "找到水轮齿片并交给琥芽，恢复河岸水车。"
+    },
+    {
+      "id": "stage-4",
+      "title": "点亮回声祭台",
+      "status": "done",
+      "text": "击败回声守卫，点亮三枚星骨符纹。"
+    },
+    {
+      "id": "stage-5",
+      "title": "集结月铃居民",
+      "status": "done",
+      "text": "完成至少 2 个居民委托或获得 18 点以上总信任，在议事篝火集合。"
+    },
+    {
+      "id": "stage-6",
+      "title": "修复失声月铃",
+      "status": "active",
+      "text": "击败夜铃残响，并在终响祭坛选择修复方式。"
+    }
+  ],
+  "completedLog": [
+    {
+      "id": "stage-1",
+      "title": "找回见习铃牌",
+      "at": "2026-09-02T20:43:15.998Z"
+    },
+    {
+      "id": "stage-2",
+      "title": "修复断桥根须",
+      "at": "2026-09-02T20:43:15.998Z"
+    },
+    {
+      "id": "stage-3",
+      "title": "让月露水车重新转动",
+      "at": "2026-09-02T20:43:15.999Z"
+    },
+    {
+      "id": "stage-4",
+      "title": "点亮回声祭台",
+      "at": "2026-09-02T20:43:15.999Z"
+    },
+    {
+      "id": "stage-5",
+      "title": "集结月铃居民",
+      "at": "2026-09-02T20:43:15.999Z"
+    }
+  ],
+  "autosaveLog": [
+    {
+      "reason": "area:inn",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "inn",
+      "stage": 0
+    },
+    {
+      "reason": "main:stage-1",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "inn",
+      "stage": 1
+    },
+    {
+      "reason": "area:emberwood",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "emberwood",
+      "stage": 1
+    },
+    {
+      "reason": "main:stage-2",
+      "at": "2026-09-02T20:43:15.998Z",
+      "location": "emberwood",
+      "stage": 2
+    },
+    {
+      "reason": "area:riverfarm",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "riverfarm",
+      "stage": 2
+    },
+    {
+      "reason": "main:stage-3",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "riverfarm",
+      "stage": 3
+    },
+    {
+      "reason": "area:starruins",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "starruins",
+      "stage": 3
+    },
+    {
+      "reason": "main:stage-4",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "starruins",
+      "stage": 4
+    },
+    {
+      "reason": "area:towerhall",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "towerhall",
+      "stage": 4
+    },
+    {
+      "reason": "sidequest:sq-scarf",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "towerhall",
+      "stage": 4
+    },
+    {
+      "reason": "area:bellvale",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "bellvale",
+      "stage": 4
+    },
+    {
+      "reason": "sidequest:sq-price",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "bellvale",
+      "stage": 4
+    },
+    {
+      "reason": "main:stage-5",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "bellvale",
+      "stage": 5
+    },
+    {
+      "reason": "area:moonspire",
+      "at": "2026-09-02T20:43:15.999Z",
+      "location": "moonspire",
+      "stage": 5
+    }
+  ],
+  "settings": {
+    "volume": 0.7,
+    "musicVolume": 0.55,
+    "sfxVolume": 0.85,
+    "muted": false,
+    "textSpeed": 1,
+    "brightness": 1,
+    "screenShake": true,
+    "reduceMotion": false,
+    "fullscreenHintSeen": false,
+    "difficulty": "标准",
+    "fontScale": 1
+  },
+  "ending": null,
+  "lastMessage": "抵达 月铃塔顶",
+  "checksum": "3fb8770e"
+}

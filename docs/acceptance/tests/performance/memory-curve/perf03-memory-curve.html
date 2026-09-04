@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { margin: 0; background: #17202a; font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; color: #f5edd7; }
+      svg { display: block; width: 1280px; height: 720px; background: linear-gradient(135deg, #17202a, #243b45 54%, #4d5138); }
+      .title { font-size: 34px; font-weight: 800; fill: #fff6d5; }
+      .subtitle, .axis, .case-label, .note { fill: #e6d7b4; }
+      .subtitle { font-size: 16px; }
+      .axis { font-size: 14px; }
+      .case-label { font-size: 15px; font-weight: 700; }
+      .grid { stroke: #ffffff; stroke-opacity: 0.14; stroke-width: 1; }
+      .line { fill: none; stroke: #f0c66e; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+      .dot { fill: #f6e2a0; stroke: #5b3c2e; stroke-width: 2; }
+      .note { font-size: 15px; }
+      .badge { fill: #203039; stroke: #d6b16b; stroke-opacity: 0.55; rx: 10; }
+    </style>
+  </head>
+  <body>
+    <svg width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="浏览器内存曲线">
+      <text x="88" y="42" class="title">PERF-03 浏览器内存曲线</text>
+      <text x="88" y="68" class="subtitle">Microsoft Edge headless，按标题、聚落、雨天河岸、首领战连续采样工作集内存</text>
+      <rect x="80" y="78" width="275.6774193548387" height="546" fill="#ffffff" opacity="0.055" />
+      <text x="217.83870967741936" y="676" text-anchor="middle" class="case-label">标题页</text>
+<rect x="376.7741935483871" y="78" width="275.6774193548388" height="546" fill="#ffffff" opacity="0.055" />
+      <text x="514.6129032258065" y="676" text-anchor="middle" class="case-label">聚落 HUD</text>
+<rect x="673.5483870967741" y="78" width="275.6774193548388" height="546" fill="#ffffff" opacity="0.055" />
+      <text x="811.3870967741935" y="676" text-anchor="middle" class="case-label">雨天河岸</text>
+<rect x="970.3225806451612" y="78" width="275.6774193548388" height="546" fill="#ffffff" opacity="0.055" />
+      <text x="1108.1612903225805" y="676" text-anchor="middle" class="case-label">首领战</text>
+      <line x1="88" y1="624" x2="1238" y2="624" class="grid" />
+      <text x="74" y="629" text-anchor="end" class="axis">750 MiB</text>
+<line x1="88" y1="514.8" x2="1238" y2="514.8" class="grid" />
+      <text x="74" y="519.8" text-anchor="end" class="axis">830 MiB</text>
+<line x1="88" y1="405.59999999999997" x2="1238" y2="405.59999999999997" class="grid" />
+      <text x="74" y="410.59999999999997" text-anchor="end" class="axis">910 MiB</text>
+<line x1="88" y1="296.4" x2="1238" y2="296.4" class="grid" />
+      <text x="74" y="301.4" text-anchor="end" class="axis">990 MiB</text>
+<line x1="88" y1="187.2" x2="1238" y2="187.2" class="grid" />
+      <text x="74" y="192.2" text-anchor="end" class="axis">1070 MiB</text>
+<line x1="88" y1="78" x2="1238" y2="78" class="grid" />
+      <text x="74" y="83" text-anchor="end" class="axis">1150 MiB</text>
+      <line x1="88" y1="78" x2="88" y2="624" class="grid" />
+      <line x1="88" y1="624" x2="1238" y2="624" class="grid" />
+      <polyline points="88.0,437.3 125.1,299.9 162.2,320.9 199.3,322.9 236.4,321.0 273.5,234.8 310.6,310.7 347.7,295.9 384.8,367.4 421.9,224.9 459.0,249.6 496.1,253.9 533.2,161.2 570.3,184.4 607.4,234.4 644.5,213.0 681.5,373.5 718.6,264.4 755.7,253.2 792.8,235.5 829.9,239.9 867.0,228.1 904.1,272.3 941.2,272.4 978.3,506.2 1015.4,236.5 1052.5,246.7 1089.6,243.5 1126.7,249.9 1163.8,230.2 1200.9,265.4 1238.0,261.6" class="line" />
+      <circle cx="88.0" cy="437.3" r="4.5" class="dot" />
+<circle cx="125.1" cy="299.9" r="4.5" class="dot" />
+<circle cx="162.2" cy="320.9" r="4.5" class="dot" />
+<circle cx="199.3" cy="322.9" r="4.5" class="dot" />
+<circle cx="236.4" cy="321.0" r="4.5" class="dot" />
+<circle cx="273.5" cy="234.8" r="4.5" class="dot" />
+<circle cx="310.6" cy="310.7" r="4.5" class="dot" />
+<circle cx="347.7" cy="295.9" r="4.5" class="dot" />
+<circle cx="384.8" cy="367.4" r="4.5" class="dot" />
+<circle cx="421.9" cy="224.9" r="4.5" class="dot" />
+<circle cx="459.0" cy="249.6" r="4.5" class="dot" />
+<circle cx="496.1" cy="253.9" r="4.5" class="dot" />
+<circle cx="533.2" cy="161.2" r="4.5" class="dot" />
+<circle cx="570.3" cy="184.4" r="4.5" class="dot" />
+<circle cx="607.4" cy="234.4" r="4.5" class="dot" />
+<circle cx="644.5" cy="213.0" r="4.5" class="dot" />
+<circle cx="681.5" cy="373.5" r="4.5" class="dot" />
+<circle cx="718.6" cy="264.4" r="4.5" class="dot" />
+<circle cx="755.7" cy="253.2" r="4.5" class="dot" />
+<circle cx="792.8" cy="235.5" r="4.5" class="dot" />
+<circle cx="829.9" cy="239.9" r="4.5" class="dot" />
+<circle cx="867.0" cy="228.1" r="4.5" class="dot" />
+<circle cx="904.1" cy="272.3" r="4.5" class="dot" />
+<circle cx="941.2" cy="272.4" r="4.5" class="dot" />
+<circle cx="978.3" cy="506.2" r="4.5" class="dot" />
+<circle cx="1015.4" cy="236.5" r="4.5" class="dot" />
+<circle cx="1052.5" cy="246.7" r="4.5" class="dot" />
+<circle cx="1089.6" cy="243.5" r="4.5" class="dot" />
+<circle cx="1126.7" cy="249.9" r="4.5" class="dot" />
+<circle cx="1163.8" cy="230.2" r="4.5" class="dot" />
+<circle cx="1200.9" cy="265.4" r="4.5" class="dot" />
+<circle cx="1238.0" cy="261.6" r="4.5" class="dot" />
+      <rect x="890" y="30" width="332" height="92" class="badge" />
+      <text x="912" y="60" class="note">采样点：32</text>
+      <text x="912" y="84" class="note">峰值：1089.05 MiB</text>
+      <text x="912" y="108" class="note">状态：通过</text>
+    </svg>
+  </body>
+</html>

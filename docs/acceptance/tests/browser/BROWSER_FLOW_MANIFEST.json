@@ -1,0 +1,1619 @@
+{
+  "schemaVersion": 1,
+  "title": "绒火与月铃",
+  "gameVersion": "0.3.3",
+  "generatedAt": "2026-06-27T08:10:14.323Z",
+  "command": "npm run capture:browser-flow",
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "mode": "Microsoft Edge headless + DevTools Protocol"
+  },
+  "baseUrl": "http://127.0.0.1:5199",
+  "viewport": {
+    "width": 960,
+    "height": 540
+  },
+  "outputDir": "docs/acceptance/tests/browser",
+  "requiredTags": [
+    "title-menu-ending",
+    "pause",
+    "keyboard",
+    "cross-area",
+    "weather",
+    "player-animation",
+    "npc-enemy",
+    "muted-feedback",
+    "browser-e2e",
+    "map-edge-pressure",
+    "interaction-stack",
+    "combat-input",
+    "npc-recovery",
+    "trailer"
+  ],
+  "selectedCaseIds": [],
+  "requirements": {
+    "requiredTags": [
+      "title-menu-ending",
+      "pause",
+      "keyboard",
+      "cross-area",
+      "weather",
+      "player-animation",
+      "npc-enemy",
+      "muted-feedback",
+      "browser-e2e",
+      "map-edge-pressure",
+      "interaction-stack",
+      "combat-input",
+      "npc-recovery",
+      "trailer"
+    ],
+    "coveredTags": 14,
+    "validVideos": true,
+    "uniqueVideos": true,
+    "trailerDurationOk": true,
+    "complete": true
+  },
+  "cases": [
+    {
+      "id": "prod01-title-menu-ending",
+      "title": "PROD-01 标题菜单与结局返回标题",
+      "path": "/",
+      "tags": [
+        "title-menu-ending",
+        "title",
+        "settings",
+        "credits",
+        "ending"
+      ],
+      "actionCount": 14,
+      "inputEventCount": 0,
+      "frameCount": 14,
+      "durationMs": 11900,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/prod01-title-menu-ending.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 11900,
+        "bytes": 109116,
+        "sha256": "71e395dd6fc16bf441e13d54de156879efdfd5b7c400134a370ef2f1abd672ae"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "标题页：开始、继续、存档、设置、制作人员可见",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-01.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "设置菜单：音量、亮度、难度、字号",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-02.jpg",
+          "bytes": 39692,
+          "sha256": "87e617274724c6313f0030e94f737caa24c7c068e0a2c7e0f68917c4fb65850a",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "关闭设置",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-03.jpg",
+          "bytes": 32246,
+          "sha256": "5ae83b3232f4c2c13236c53f3fd4f10dec94b1b318c950ca1a32992c360e3545",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "制作人员与许可",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-04.jpg",
+          "bytes": 47231,
+          "sha256": "440b7f1270e0f9ad717235c63ae75a338c96eb942322c5bfd81dbfdb7e1f4ba2",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "关闭制作人员",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-05.jpg",
+          "bytes": 32239,
+          "sha256": "65726f62db5b8e6afead6ad135081769c67bce9fa712610810a788727df7e038",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "开始游戏进入月铃聚落",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-06.jpg",
+          "bytes": 22946,
+          "sha256": "385bf7e493e8801326856cfa051bd807bbbde0f797038f88b35144ab38ade9f5",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 7,
+          "label": "任务日志可打开",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-07.jpg",
+          "bytes": 40293,
+          "sha256": "e2be71229064c07532904ab1eb1483fe108b080c0a1cb3a7e3d4e9364ec4091d",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 8,
+          "label": "关闭任务日志",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-08.jpg",
+          "bytes": 23244,
+          "sha256": "0f3960388e069f78e5ac3b71bc38aa916bb56c396c4b4a122260f3f855d82893",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 9,
+          "label": "背包可打开",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-09.jpg",
+          "bytes": 26846,
+          "sha256": "4ead08ae22a0a82129721b262f39e524aa908f4dfa8be78eab0da0d22cfc8fab",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 10,
+          "label": "关闭背包",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-10.jpg",
+          "bytes": 23321,
+          "sha256": "5fedf919e8fd4dbda2963e38cd002101a7a5fc94d05abc3078ff1051792cee03",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 11,
+          "label": "暂停菜单包含继续、设置、控制说明、保存、返回标题",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-11.jpg",
+          "bytes": 25121,
+          "sha256": "7b3f8e4d811e04bbcaeb8efa7fabf250ad66cd0360afcdb673e0a32b264cd5c0",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 12,
+          "label": "暂停菜单返回标题",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-12.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 13,
+          "label": "终局结算页可返回标题",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-13.jpg",
+          "bytes": 31978,
+          "sha256": "7b1806e410afaef8bf3c64cc566136fd1fe503b9f936fd0c6f44abb5b406664a",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 14,
+          "label": "结局返回标题",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/prod01-title-menu-ending-14.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "ux04-pause-combat",
+      "title": "UX-04 战斗中暂停与恢复",
+      "path": "/?scene=forest-combat",
+      "tags": [
+        "pause",
+        "combat",
+        "resume"
+      ],
+      "actionCount": 7,
+      "inputEventCount": 3,
+      "frameCount": 7,
+      "durationMs": 5950,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/ux04-pause-combat.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 5950,
+        "bytes": 33877,
+        "sha256": "33f7c5ff465515e8b6b8e58a28f5960dba14e514a3b2d9c23de9b77e6c893659"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "战斗场景运行中",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-01.jpg",
+          "bytes": 22921,
+          "sha256": "6093777627b0d39a31995429749d3bd07c575256e827da84f67da298153b42ce",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "Esc 打开暂停菜单",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-02.jpg",
+          "bytes": 24342,
+          "sha256": "e73641aa44cc6bf6e5a85900596925035ba257671899e4bf91ac9c845cad7217",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "暂停菜单保存反馈",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-03.jpg",
+          "bytes": 25220,
+          "sha256": "92d9beb8f081694927d9d7e6b8a57f48b39afacf0640bdedf9cdb4618de40d20",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "控制说明可从暂停进入",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-04.jpg",
+          "bytes": 25453,
+          "sha256": "281cea65825829a6f526bc3dcaaf0928056cf82126ae0b24c5e50f80fffa9127",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "Esc 关闭暂停层并恢复",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-05.jpg",
+          "bytes": 25258,
+          "sha256": "014370db28d242646edc1aed093005b43084c7245341e6cbeb3f394a767acfb1",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "再次 Esc 可暂停",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-06.jpg",
+          "bytes": 25223,
+          "sha256": "37c2532cffe93db9dc3e861a74ae9dc094a321e31191d59b3245761fa2ba0fa6",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 7,
+          "label": "继续按钮恢复游戏",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux04-pause-combat-07.jpg",
+          "bytes": 24486,
+          "sha256": "a99b88d217ee77c713edbd22367ba74a0da268fe2c3ce7bbbfdea2fe9d3886b3",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "ux08-keyboard-menu-save",
+      "title": "UX-08 纯键盘移动、菜单与存档",
+      "path": "/",
+      "tags": [
+        "keyboard",
+        "save",
+        "menu"
+      ],
+      "actionCount": 10,
+      "inputEventCount": 9,
+      "frameCount": 10,
+      "durationMs": 8500,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/ux08-keyboard-menu-save.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 8500,
+        "bytes": 62448,
+        "sha256": "e09bcc9e80c4edc06b410602dea0ac98c96c8243bb8fc6a96b91ddcf7f691414"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "键盘焦点到开始按钮",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-01.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "Enter 开始游戏",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-02.jpg",
+          "bytes": 23235,
+          "sha256": "02249626de354fcd5a7244f6482ccbb974d91d553a7e73b1edb3c0cd7b0c4286",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "WASD 移动角色",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-03.jpg",
+          "bytes": 22988,
+          "sha256": "5e05fb416cd4254c2bd2c8ed6512d0b3fe20901bca462ad98a43fae206008554",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "L 打开任务日志",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-04.jpg",
+          "bytes": 39682,
+          "sha256": "3a609318316c743cb9d64e58c405bfa321e7750064043fad62402fc2852ad218",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "Enter 关闭任务日志",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-05.jpg",
+          "bytes": 22816,
+          "sha256": "cecda264d35f3b770780a92ab8cd0407cb764694305f66aad7ba348cff8c0249",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "I 打开背包",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-06.jpg",
+          "bytes": 26191,
+          "sha256": "37dbeaa7a9f08a6099b95c07e9b71de6ce9a6b707f79ad1ca633199b7f53759d",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 7,
+          "label": "Enter 关闭背包",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-07.jpg",
+          "bytes": 22984,
+          "sha256": "9cd0549b822b3897cf37a7a3c4fe9538751969d01fd91bad43cb481b69059881",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 8,
+          "label": "Esc 打开暂停",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-08.jpg",
+          "bytes": 24834,
+          "sha256": "4c5a8a35fd4a4b63896b81c3283c52fa51d307a7cbb0373d99659f860d748b35",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 9,
+          "label": "键盘触发手动保存",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-09.jpg",
+          "bytes": 25380,
+          "sha256": "ddb7bfeaf92422d5cfee14786d27c8fe730e9be33bb2c532ec8ea24504637512",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 10,
+          "label": "键盘继续游戏",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/ux08-keyboard-menu-save-10.jpg",
+          "bytes": 23928,
+          "sha256": "ea899d2c0679b54a9589c283431eaf44c63b8e7f276871cae61c0d5ca14d85ce",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "world03-cross-area-browser",
+      "title": "WORLD-03 浏览器跨区加载时间轴",
+      "path": "/?scene=bellvale",
+      "tags": [
+        "cross-area",
+        "loading",
+        "world"
+      ],
+      "actionCount": 5,
+      "inputEventCount": 0,
+      "frameCount": 5,
+      "durationMs": 4250,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/world03-cross-area-browser.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 4250,
+        "bytes": 22336,
+        "sha256": "41ea92dd8d3461b72ec71d0972227517d15c1ba6cc63db0a158490d55b4d0f60"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "月铃聚落加载",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world03-cross-area-browser-01.jpg",
+          "bytes": 22167,
+          "sha256": "a3734f8548407383aca221921fdef281cd6882ee040d2c0ff5397df69cfcd70d",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "绒火森林加载",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world03-cross-area-browser-02.jpg",
+          "bytes": 22951,
+          "sha256": "6f939a2875846f296e323a601fc445f9142b14d00f6bf01b28c33767cb268ab1",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "月露河岸加载",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world03-cross-area-browser-03.jpg",
+          "bytes": 23675,
+          "sha256": "bba4aa44df04b0bfb9f60c25558ba2867450d3ac6c36390280281983b705a443",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "星骨遗迹加载",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world03-cross-area-browser-04.jpg",
+          "bytes": 21557,
+          "sha256": "e363e0ae7a57edbc244b58ad6a6f2ebb021f9d8a0466c7b1d5940a38990e196e",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "月铃塔顶加载",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world03-cross-area-browser-05.jpg",
+          "bytes": 22792,
+          "sha256": "e53de364e397ee6e91caf7afc1a9d92a685add6cd8976452c73541dc1227279d",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "world05-weather-browser",
+      "title": "WORLD-05 天气与时段视觉/玩法证据",
+      "path": "/?scene=bellvale&weather=%E6%99%B4%E6%9C%97&segment=0",
+      "tags": [
+        "weather",
+        "rain",
+        "fog",
+        "night"
+      ],
+      "actionCount": 4,
+      "inputEventCount": 0,
+      "frameCount": 4,
+      "durationMs": 3400,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/world05-weather-browser.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 3400,
+        "bytes": 23681,
+        "sha256": "30f63538d2077526f5c1d75542aa1276acceda491b15f9aa08601971d650bb53"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "清晨晴朗聚落",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world05-weather-browser-01.jpg",
+          "bytes": 22171,
+          "sha256": "e7317b7012efe38889360f78fbbec2c36745e30e3cf8a4ab97deb639226c864b",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "午后细雨河岸",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world05-weather-browser-02.jpg",
+          "bytes": 40401,
+          "sha256": "fdeb0218ceeefdd74dd02600869ca01cdc271491897cf8f37c5459b0e6f8d46a",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "深夜雾风遗迹",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world05-weather-browser-03.jpg",
+          "bytes": 21581,
+          "sha256": "32186b26565c77a3cee3713e249b72d7c8b7f70807a86b930c587460e5b76651",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "雾风塔顶首领",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/world05-weather-browser-04.jpg",
+          "bytes": 22805,
+          "sha256": "fe40a364ec8c80ae52f1a5b59d11ddc89319e2687e9f60974530644efef330a1",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "art03-player-actions",
+      "title": "ART-03 主角移动、攻击、闪避动作",
+      "path": "/?scene=forest-combat",
+      "tags": [
+        "player-animation",
+        "move",
+        "attack",
+        "dodge"
+      ],
+      "actionCount": 5,
+      "inputEventCount": 3,
+      "frameCount": 5,
+      "durationMs": 4250,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/art03-player-actions.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 4250,
+        "bytes": 22671,
+        "sha256": "3f7423a03bc473c8f4ddc478d6d9ef0794a856a8bbcc20cccfd8eab942b68ace"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "主角待机姿态",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art03-player-actions-01.jpg",
+          "bytes": 22862,
+          "sha256": "7143d6cc898da2327c8d9b0187c52cf2ff96987af74cc9678baebba65d231194",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "主角向右移动",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art03-player-actions-02.jpg",
+          "bytes": 24014,
+          "sha256": "9a11cd8da682e74d8d46d6fe4b5c375afda97f4539f4afb961b6922607ee116f",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "月铃击攻击弧",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art03-player-actions-03.jpg",
+          "bytes": 23879,
+          "sha256": "bee291cca2a20ab1f735c9b614a1e7ac893187d2db0a3c0ad640340d091f25c7",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "Shift 闪避位移",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art03-player-actions-04.jpg",
+          "bytes": 23827,
+          "sha256": "f829271ec81a78110c50ab62cd26f6eb5d3f1cfa32a11fec9739e3fb49b3c554",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "受击/战斗反馈保持可读",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art03-player-actions-05.jpg",
+          "bytes": 23987,
+          "sha256": "20e2744e9e93c27a80a2b4a3e9035934475bf17b23844306f2d662bd462578ec",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "art04-npc-enemy-observation",
+      "title": "ART-04 NPC 与敌人 30 秒观察摘要",
+      "path": "/?scene=bellvale",
+      "tags": [
+        "npc-enemy",
+        "npc",
+        "enemy",
+        "observation"
+      ],
+      "actionCount": 4,
+      "inputEventCount": 0,
+      "frameCount": 4,
+      "durationMs": 30400,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/art04-npc-enemy-observation.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 30400,
+        "bytes": 18910,
+        "sha256": "7c34602ce668d8cdaeeb7ee82260bea2422d4f709888ccb46071508d7996aff8"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "聚落 NPC 待机",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art04-npc-enemy-observation-01.jpg",
+          "bytes": 22160,
+          "sha256": "466dec1ee6a1023c04abce3399a700c45b8b7a96ebb50fee390b6d0ad43e49a8",
+          "durationMs": 7600,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "NPC 位置变化观察",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art04-npc-enemy-observation-02.jpg",
+          "bytes": 22134,
+          "sha256": "c4549d02f5353c0f72f757c4d98b782ce758fc00a59c51c2b4c291234298f2e4",
+          "durationMs": 7600,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "星骨遗迹敌人出现",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art04-npc-enemy-observation-03.jpg",
+          "bytes": 21573,
+          "sha256": "d629fb65ec12254eb52e1ab36f43fd8b5cb1a4c32b84a9d7aec502d3b9a89483",
+          "durationMs": 7600,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "首领阶段反馈观察",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art04-npc-enemy-observation-04.jpg",
+          "bytes": 21427,
+          "sha256": "8a3fe2e2165277b59b89cde36d789bca7684479d87a336111b3ecdf224d6afbd",
+          "durationMs": 7600,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "art07-muted-feedback",
+      "title": "ART-07 无声操作文字/画面反馈",
+      "path": "/?scene=forest-combat",
+      "tags": [
+        "muted-feedback",
+        "feedback",
+        "combat",
+        "save"
+      ],
+      "actionCount": 6,
+      "inputEventCount": 2,
+      "frameCount": 6,
+      "durationMs": 5100,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/art07-muted-feedback.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 5100,
+        "bytes": 43607,
+        "sha256": "497dfedc47e224ee7c394a2fbf5be406abe3a7b755234f94c74246bb79e37334"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "静音设置下进入战斗",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art07-muted-feedback-01.jpg",
+          "bytes": 22928,
+          "sha256": "b3525ab7b77318a9becb55268def45107de97849c7d71933405265cd8d8d6f86",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "攻击产生画面反馈",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art07-muted-feedback-02.jpg",
+          "bytes": 22762,
+          "sha256": "6b7b269615f54e4f3d2b14c34d35b692a4d151f8d044198a4bfc7ca4536ab572",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "任务日志提供文字反馈",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art07-muted-feedback-03.jpg",
+          "bytes": 40219,
+          "sha256": "11bfbfdf55ce43b09da58ae7a2f8d161d8442385e9f24d7595dd07ab8aff2de1",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "关闭任务日志",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art07-muted-feedback-04.jpg",
+          "bytes": 23270,
+          "sha256": "0009ead1436dd0b0a8cccb0beccedd3f1cc019bbfd16c05782424f27cc78a9d5",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "暂停保存提供文字反馈",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art07-muted-feedback-05.jpg",
+          "bytes": 24573,
+          "sha256": "9f725bac1523f3d9090b10d48f8f1f455ae50bd692e4834fa0e4fac12aa25839",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "保存 toast 可见",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/art07-muted-feedback-06.jpg",
+          "bytes": 25471,
+          "sha256": "158018e86688fb38cbbeb7901eb498dd497021728bed431f0791014838149bf6",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "qa02-browser-e2e",
+      "title": "QA-02 浏览器端新游戏/保存/继续流程",
+      "path": "/",
+      "tags": [
+        "browser-e2e",
+        "new-game",
+        "save-load"
+      ],
+      "actionCount": 8,
+      "inputEventCount": 2,
+      "frameCount": 8,
+      "durationMs": 6800,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/qa02-browser-e2e.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 6800,
+        "bytes": 45135,
+        "sha256": "62e3f95c0d262c1595338d1a2a927695fcc847cf9cfb9194f4732725d85c9dcc"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "标题页加载",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-01.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "新游戏",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-02.jpg",
+          "bytes": 23205,
+          "sha256": "fa073e5c729d30e2944569a54683f0be0c2ab717850d0471e46f6f3889f884f5",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "移动与攻击输入",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-03.jpg",
+          "bytes": 22846,
+          "sha256": "6721fd50db5998c3f6a45eac1445d655c2e1826fde6d1a9e92ad7cbdbd6865ad",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "打开暂停",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-04.jpg",
+          "bytes": 25522,
+          "sha256": "8a63e79b9240c8a38a099aca6ac45dd415c975e2365357805f07f2fca1280e60",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "手动保存",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-05.jpg",
+          "bytes": 25874,
+          "sha256": "c1a96c0969b7d678a1c7b83d8b82deca254055add29d5239347ae9874db9a916",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "返回标题",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-06.jpg",
+          "bytes": 36011,
+          "sha256": "7ddd9472051ce6e42d8ee05fca225068e5f3939d17879a83d7c9e699376415a2",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 7,
+          "label": "继续按钮读取存档",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-07.jpg",
+          "bytes": 24147,
+          "sha256": "c22a8b8765a7c20ad1db89ee6590c446a9601f8d0158daef15a49e214315e296",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 8,
+          "label": "存档后继续回到游戏",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/qa02-browser-e2e-08.jpg",
+          "bytes": 24122,
+          "sha256": "1a82b5d45d41a90c080fc47f5b1573e65d80fde9df515b4771579e5aaee8cc94",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "rel04-trailer-60s",
+      "title": "REL-04 45-90 秒实机短片素材",
+      "path": "/?scene=bellvale",
+      "tags": [
+        "trailer",
+        "release-video",
+        "portfolio"
+      ],
+      "actionCount": 10,
+      "inputEventCount": 0,
+      "frameCount": 10,
+      "durationMs": 47000,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/rel04-trailer-60s.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 47000,
+        "bytes": 96251,
+        "sha256": "682370e892b95afb110a5594d6678bb22d211059106c496eb46455a2a0cab667"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "标题与主视觉",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-01.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "月铃聚落",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-02.jpg",
+          "bytes": 22184,
+          "sha256": "71d83c4d9aa8182e98bf721d095210f43ffd7c2e0a2d22f5d2c69a7f0b9181a8",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "森林战斗",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-03.jpg",
+          "bytes": 22985,
+          "sha256": "fc97b517a447241afa52a4c92813ff701a0aca5cc5733bfe1874cd898aab701a",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "雨天河岸",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-04.jpg",
+          "bytes": 23947,
+          "sha256": "57b3d7d7581bffcb0156eafe20aee4c616fec6dbbf6242e8780bcfe14413b40f",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "遗迹首领",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-05.jpg",
+          "bytes": 21571,
+          "sha256": "d00290ba0b2423644be8393d573a86a40caa3d0faacf823777e738d1647729c8",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "月铃塔顶",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-06.jpg",
+          "bytes": 22801,
+          "sha256": "3cd3dd1100d76da441d24227c1a451f255de3293c13d03271c917d354301fd87",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 7,
+          "label": "结局页",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-07.jpg",
+          "bytes": 31977,
+          "sha256": "c048e56048cba3b5e559d070906556e0fef70cf19e6238b9d2a1862085c6197b",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 8,
+          "label": "返回标题收束",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-08.jpg",
+          "bytes": 34626,
+          "sha256": "8c0576f514f3c09b691bc605485c0771f2d97a6f3848b2fbbbdf097782e03acc",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 9,
+          "label": "制作人员与许可",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-09.jpg",
+          "bytes": 46643,
+          "sha256": "90f52dd2384ec3c77bcb0d00aecb2d793e473ad692e04698a30eb61158276c62",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 10,
+          "label": "短片结束画面",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/rel04-trailer-60s-10.jpg",
+          "bytes": 32263,
+          "sha256": "0e0083c6906f935070eec74b3de06dc7bb33ef19fee6b7d8831a60cd7c79fb56",
+          "durationMs": 4700,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "game01-map-edge-pressure",
+      "title": "GAME-01 地图边缘、窄门与碰撞压力",
+      "path": "/?scene=bellvale",
+      "tags": [
+        "map-edge-pressure",
+        "movement",
+        "collision",
+        "real-input"
+      ],
+      "actionCount": 6,
+      "inputEventCount": 6,
+      "frameCount": 6,
+      "durationMs": 5100,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/game01-map-edge-pressure.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 5100,
+        "bytes": 28325,
+        "sha256": "d606958898106c946900c9275604b47ac58995e9b845f539a5ff1653b76e18a0"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "聚落左侧边界持续移动",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game01-map-edge-pressure-01.jpg",
+          "bytes": 22716,
+          "sha256": "ec9c8b27a1cdce4a8834c68a397fcd2774a672e144f04f054f0d07bfa5287dff",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "聚落上沿建筑边持续移动",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game01-map-edge-pressure-02.jpg",
+          "bytes": 22910,
+          "sha256": "1add67839376f86fb2fb16dc9008b3ebd2943c5081365acec30be73d9e0ace4f",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "森林入口与窄路右推",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game01-map-edge-pressure-03.jpg",
+          "bytes": 23933,
+          "sha256": "4f776093af56013a5126402cf6af30b0fafbe998e6591a54676fafcdb9880ca5",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "河岸水线下推",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game01-map-edge-pressure-04.jpg",
+          "bytes": 25656,
+          "sha256": "1a428889561bb812513ad444f19858a523d11273d1a2fbf8c475082135ab02ac",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "遗迹墙体左推",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game01-map-edge-pressure-05.jpg",
+          "bytes": 21669,
+          "sha256": "6fd7d420c65629461a95d61478071932055d4d7ebb1da73fcae012785d16dd24",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "塔顶边界上推",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game01-map-edge-pressure-06.jpg",
+          "bytes": 22064,
+          "sha256": "9a3138a309bd066eda14a8fd11ba04216337294d7d24c1395c2b89a1e5f070e7",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "game02-interaction-stack-20",
+      "title": "GAME-02 交互目标堆叠与 20 次真实交互",
+      "path": "/?scene=bellvale",
+      "tags": [
+        "interaction-stack",
+        "interact",
+        "repeat-20",
+        "real-input"
+      ],
+      "actionCount": 9,
+      "inputEventCount": 21,
+      "frameCount": 9,
+      "durationMs": 7650,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/game02-interaction-stack-20.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 7650,
+        "bytes": 57776,
+        "sha256": "3b33c758c10e6411bb48dfc0f19855aae627312bfa9c69b264ec6bf810524b5d"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "聚落广场连续 5 次交互",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-01.jpg",
+          "bytes": 25687,
+          "sha256": "a64f5d7b2902d08cd9eb39e4d279e0abc1f3411d1a9a0db516ece75332e32353",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "任务日志仍可打开",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-02.jpg",
+          "bytes": 40379,
+          "sha256": "bd9d6b049f5a1a03cf547db50e0190d9b4f2d2524045270d2a8e9e0fa774900d",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "关闭任务日志",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-03.jpg",
+          "bytes": 25664,
+          "sha256": "3a32764318681b6946975140cd30df46ffcf12841361a7050a9f31688b357bab",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "聚落广场二轮 5 次交互",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-04.jpg",
+          "bytes": 25688,
+          "sha256": "2319aac97555913364f131492c9cf70e35182e7c9f9e3b3c32ee73fe7e0fdd92",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "背包打开后仍能恢复",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-05.jpg",
+          "bytes": 26914,
+          "sha256": "73967d353168455893226fa1b72eb90cf502e20155e53d150808d3693a523010",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "关闭背包",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-06.jpg",
+          "bytes": 25669,
+          "sha256": "34766d4933c52c6709029a433128539ab34e340de52e5701ad55c3990a37a1c4",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 7,
+          "label": "聚落广场三轮 5 次交互",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-07.jpg",
+          "bytes": 25698,
+          "sha256": "d3f1b5c10b801d7498d15c33ad7dd5a22af1fe94b92c8b00feeba426d8b82aef",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 8,
+          "label": "暂停打断交互链",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-08.jpg",
+          "bytes": 25223,
+          "sha256": "23ce42049f192b11a2058f0d117bbd76c6623c9a57246087cf39ad4dce298cad",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 9,
+          "label": "继续后聚落广场四轮 5 次交互",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game02-interaction-stack-20-09.jpg",
+          "bytes": 25722,
+          "sha256": "c1f2c77c6b7b18b3c360c9961d2f6cea427a58836617eb19703076e7443d26d3",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "game03-combat-input",
+      "title": "GAME-03 战斗真实输入压力",
+      "path": "/?scene=forest-combat",
+      "tags": [
+        "combat-input",
+        "combat",
+        "enemy-input",
+        "real-input"
+      ],
+      "actionCount": 6,
+      "inputEventCount": 33,
+      "frameCount": 6,
+      "durationMs": 5100,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/game03-combat-input.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 5100,
+        "bytes": 30546,
+        "sha256": "5804ed1397cce5d2f702cbfe0d0cf9012d4fba1bcae767e6e7230284d0b53ec7"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "森林敌人 10 次攻击输入",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game03-combat-input-01.jpg",
+          "bytes": 23840,
+          "sha256": "3f13eb5bb7b717a0731fcaf74895c14ca5530f172681c9b1f65b7d920453f222",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "森林战斗闪避恢复",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game03-combat-input-02.jpg",
+          "bytes": 23861,
+          "sha256": "da9727933de62e2046fad1d8777399704dc82e0d656abbac63f1c67839c9e9c7",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "遗迹首领 10 次攻击输入",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game03-combat-input-03.jpg",
+          "bytes": 21253,
+          "sha256": "4b7e9f2cfbeb556ee2fc269bff628cb0f289278ac3fec9669d8843805f3f9411",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "遗迹首领横移",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game03-combat-input-04.jpg",
+          "bytes": 20914,
+          "sha256": "1be0d5c4d67701de82b59e89c7dd98de903b93ac0095a28bd9f7f1a0f9615651",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "塔顶首领 10 次攻击输入",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game03-combat-input-05.jpg",
+          "bytes": 22518,
+          "sha256": "31970051d0de6eb1b0464deb8c020e2cc68cdb9025ad5725dd400de4bace4fd6",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "塔顶闪避恢复",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/game03-combat-input-06.jpg",
+          "bytes": 22809,
+          "sha256": "b17e882a16db8848d42def18f1c8b810436d894cc6228febf1c3404921e3cff0",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    },
+    {
+      "id": "npc07-interrupt-recovery",
+      "title": "NPC-07 对话打断、切图与恢复",
+      "path": "/?scene=bellvale",
+      "tags": [
+        "npc-recovery",
+        "npc",
+        "interrupt",
+        "real-input"
+      ],
+      "actionCount": 6,
+      "inputEventCount": 6,
+      "frameCount": 6,
+      "durationMs": 5100,
+      "video": {
+        "file": "docs/acceptance/tests/browser/browser-flow-videos/npc07-interrupt-recovery.webm",
+        "mimeType": "video/webm;codecs=vp9",
+        "durationMs": 5100,
+        "bytes": 31780,
+        "sha256": "cc7ec47ad60961e1478a96f9e61b0ea457c30d84acf7a6c7e0600d5b4ce7dd53"
+      },
+      "frames": [
+        {
+          "step": 1,
+          "label": "聚落交互/对白输入",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/npc07-interrupt-recovery-01.jpg",
+          "bytes": 25758,
+          "sha256": "030f665f5821fc0a4a213cc41facc7c1b4bbede86e1e3ae68e531cd95ee94b12",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 2,
+          "label": "暂停打断当前交互",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/npc07-interrupt-recovery-02.jpg",
+          "bytes": 25226,
+          "sha256": "cd3756ea859b5dee48c434bfd3a35711f0d3ad9abb6bbfbe573c2cf18565debf",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 3,
+          "label": "恢复后仍在游戏",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/npc07-interrupt-recovery-03.jpg",
+          "bytes": 25671,
+          "sha256": "513c76cf9ca21e8530b37a0e34a3f930bc61f7f118a48390695d49e7fff71152",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 4,
+          "label": "切到河岸再返回聚落",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/npc07-interrupt-recovery-04.jpg",
+          "bytes": 23939,
+          "sha256": "b5cad88731129d51944e7a04076dd70e99edcefaf8bce444ce96f3c2ddc67c63",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 5,
+          "label": "河岸交互后打断",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/npc07-interrupt-recovery-05.jpg",
+          "bytes": 24096,
+          "sha256": "1d4b470b3af019b4046d3d6be6a65defc9fee65726800e651b9dbddc31ca7671",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        },
+        {
+          "step": 6,
+          "label": "切回聚落后 NPC 日程继续可见",
+          "file": "docs/acceptance/tests/browser/browser-flow-frames/npc07-interrupt-recovery-06.jpg",
+          "bytes": 23446,
+          "sha256": "e8c263535ddd69ba01537daa76bf5e16603312d84f921b4ecd4a4507a3e9c39f",
+          "durationMs": 850,
+          "check": {
+            "ok": true,
+            "note": "通过"
+          }
+        }
+      ],
+      "ok": true,
+      "note": "通过"
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+:root {
+  color-scheme: light;
+  --ink: #211f28;
+  --muted: #66707d;
+  --paper: #f4ead8;
+  --panel: #fff8e8;
+  --line: #d4c2a4;
+  --green: #2f7f76;
+  --red: #c95a3e;
+  --gold: #d99b35;
+  --blue: #425c9b;
+  --violet: #6a5a92;
+  --shadow: 0 20px 70px rgba(67, 45, 24, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family:
+    "Microsoft YaHei UI",
+    "PingFang SC",
+    "Noto Sans CJK SC",
+    system-ui,
+    sans-serif;
+  background:
+    linear-gradient(135deg, rgba(47, 127, 118, 0.22), transparent 38%),
+    linear-gradient(315deg, rgba(217, 155, 53, 0.22), transparent 34%),
+    var(--paper);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  min-height: 40px;
+  border: 1px solid rgba(33, 31, 40, 0.18);
+  border-radius: 8px;
+  padding: 0 14px;
+  color: var(--ink);
+  background: #fff5df;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  border-color: rgba(33, 31, 40, 0.45);
+  outline: none;
+}
+
+button.primary,
+.primary {
+  color: #fff;
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.loading-screen,
+.compat-screen,
+.app {
+  min-height: 100vh;
+}
+
+.loading-screen,
+.compat-screen {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.loading-card,
+.compat-card {
+  width: min(520px, 100%);
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 248, 232, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.compat-card p {
+  line-height: 1.7;
+}
+
+.loading-card h1,
+.compat-card h1,
+.hero-copy h1 {
+  margin: 0;
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+.loading-card h1 {
+  font-size: 2rem;
+}
+
+.compat-card h1 {
+  font-size: 2.2rem;
+}
+
+.loading-bar {
+  overflow: hidden;
+  height: 10px;
+  margin: 18px 0 10px;
+  border-radius: 999px;
+  background: #ddccb1;
+}
+
+.loading-bar span {
+  display: block;
+  width: 68%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--green), var(--gold));
+  animation: loading 1100ms ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+  from {
+    transform: translateX(-28%);
+  }
+  to {
+    transform: translateX(48%);
+  }
+}
+
+.screen {
+  width: min(1440px, calc(100vw - 28px));
+  margin: 14px auto;
+}
+
+.title-screen {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(480px, 1.2fr);
+  gap: 18px;
+  min-height: calc(100vh - 28px);
+  align-items: stretch;
+}
+
+.hero-copy,
+.hero-scene,
+.game-hud,
+.side-panel,
+.modal {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 248, 232, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(22px, 4vw, 54px);
+}
+
+.eyebrow {
+  margin: 0 0 7px;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.hero-copy h1 {
+  font-size: clamp(3rem, 6vw, 6.4rem);
+}
+
+.hero-text {
+  max-width: 640px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.title-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.title-actions button:first-child {
+  grid-column: 1 / -1;
+}
+
+.browser-note {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.hero-scene {
+  overflow: hidden;
+  min-height: 520px;
+}
+
+#previewCanvas,
+#gameCanvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.game-screen {
+  min-height: calc(100vh - 28px);
+}
+
+.game-hud {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.8fr) minmax(280px, 1.2fr) minmax(260px, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  min-height: 82px;
+  padding: 12px 14px;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 0;
+}
+
+.game-hud h2,
+.side-panel h3,
+.modal h2 {
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.bars {
+  display: grid;
+  gap: 8px;
+}
+
+.meter {
+  position: relative;
+  overflow: hidden;
+  min-height: 24px;
+  border: 1px solid rgba(33, 31, 40, 0.16);
+  border-radius: 999px;
+  background: #e3d3b8;
+}
+
+.meter span {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 2px;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.meter b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #c95a3e, #e58a5d);
+}
+
+.meter.stamina b {
+  background: linear-gradient(90deg, #2f7f76, #71b982);
+}
+
+.hud-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hud-meta span {
+  min-height: 28px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.hud-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.play-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 14px;
+}
+
+.canvas-wrap {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 122px);
+  border: 1px solid var(--line);
+  background: #223;
+}
+
+.side-panel {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 12px;
+  min-height: calc(100vh - 122px);
+  padding: 14px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadow);
+}
+
+.side-panel section {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid rgba(33, 31, 40, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.side-panel p {
+  line-height: 1.6;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 8px 12px;
+  color: var(--muted);
+}
+
+.control-grid b {
+  color: var(--ink);
+}
+
+.message-log {
+  display: grid;
+  gap: 8px;
+  overflow: auto;
+  max-height: 360px;
+  scrollbar-width: thin;
+}
+
+.message-log article,
+.inventory-row,
+.quest-row,
+.save-row,
+.person-row {
+  padding: 9px;
+  border: 1px solid rgba(33, 31, 40, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 248, 232, 0.7);
+}
+
+.prompt,
+.toast {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  max-width: min(640px, calc(100% - 36px));
+  padding: 11px 13px;
+  border-radius: 8px;
+  color: #fff8e8;
+  background: rgba(33, 31, 40, 0.86);
+  pointer-events: none;
+}
+
+.toast {
+  bottom: auto;
+  top: 18px;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(33, 31, 40, 0.42);
+}
+
+.modal {
+  width: min(760px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: hidden;
+}
+
+.modal header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.icon-only {
+  width: 40px;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.modal-body {
+  overflow: auto;
+  max-height: calc(100vh - 112px);
+  padding: 16px;
+}
+
+.modal-body p {
+  line-height: 1.7;
+}
+
+.modal-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(33, 31, 40, 0.1);
+}
+
+.choice-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1080px) {
+  .title-screen,
+  .play-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .game-hud {
+    grid-template-columns: 1fr;
+  }
+
+  .canvas-wrap {
+    min-height: 540px;
+  }
+
+  .side-panel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .screen {
+    width: min(100vw - 16px, 680px);
+    margin: 8px auto;
+  }
+
+  .title-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-scene {
+    min-height: 320px;
+  }
+
+  .canvas-wrap {
+    min-height: 420px;
+  }
+}
+
+.loading-screen[hidden],
+.screen[hidden],
+.modal-layer[hidden],
+[hidden] {
+  display: none !important;
+}

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#111817" />
+    <title>月铃文明 - AI 文明模拟器</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=0.4.0" />
+    <link rel="preload" as="image" href="/assets/civilization/town-map.png" />
+    <link rel="stylesheet" href="/civilization.css?v=0.4.0" />
+  </head>
+  <body>
+    <noscript>
+      <section class="compat-screen">
+        <h1>需要启用 JavaScript</h1>
+        <p>月铃文明依靠浏览器实时模拟 30 名居民，请启用 JavaScript 后重新打开。</p>
+      </section>
+    </noscript>
+
+    <section id="loadingScreen" class="loading-screen" aria-live="polite">
+      <div class="loading-mark" aria-hidden="true"><span></span></div>
+      <h1>月铃文明</h1>
+      <p id="loadingStatus">正在唤醒 30 名居民...</p>
+      <div class="loading-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+
+    <main id="civilizationApp" class="civilization-app" hidden>
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true"><span></span></div>
+          <div>
+            <h1>月铃文明</h1>
+            <p><span class="live-indicator"></span><span id="worldStatus">30 名居民自主生活中</span></p>
+          </div>
+        </div>
+
+        <section id="metricStrip" class="metric-strip" aria-label="城镇指标"></section>
+
+        <nav class="top-actions" aria-label="模拟控制">
+          <button id="pauseBtn" class="icon-command" type="button" title="暂停或继续模拟" aria-label="暂停模拟">
+            <span id="pauseIcon" aria-hidden="true">Ⅱ</span><b id="pauseLabel">暂停</b>
+          </button>
+          <div class="speed-control" role="group" aria-label="模拟速度">
+            <button type="button" data-speed="1" class="active">1x</button>
+            <button type="button" data-speed="2">2x</button>
+            <button type="button" data-speed="4">4x</button>
+            <button type="button" data-speed="8">8x</button>
+          </div>
+          <button id="stepBtn" class="icon-button" type="button" title="推进一天" aria-label="推进一天">+1</button>
+          <button id="relationshipBtn" class="text-command" type="button">关系图</button>
+          <button id="saveBtn" class="icon-button" type="button" title="存档与世界分支" aria-label="存档与世界分支">◇</button>
+          <button id="themeBtn" class="icon-button" type="button" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+        </nav>
+      </header>
+
+      <div class="workspace">
+        <section class="map-column" aria-label="城镇地图与上帝事件">
+          <div id="mapStage" class="map-stage">
+            <canvas id="townCanvas" tabindex="0" aria-label="可缩放的月铃镇地图，点击居民查看详情"></canvas>
+
+            <div class="map-heading">
+              <p id="dateLabel">第 1 日 清晨</p>
+              <strong id="weatherLabel">月光晴夜</strong>
+            </div>
+
+            <div id="activeEffects" class="active-effects" aria-live="polite"></div>
+
+            <div class="map-tools" role="group" aria-label="地图控制">
+              <button id="zoomInBtn" type="button" title="放大地图" aria-label="放大地图">＋</button>
+              <button id="zoomOutBtn" type="button" title="缩小地图" aria-label="缩小地图">−</button>
+              <button id="centerMapBtn" type="button" title="回到全城视角" aria-label="回到全城视角">⌂</button>
+            </div>
+
+            <div id="mapHint" class="map-hint">点击一位居民，看看他为什么来到这里</div>
+            <div id="eventSpotlight" class="event-spotlight" hidden></div>
+          </div>
+
+          <section class="god-composer" aria-labelledby="godComposerTitle">
+            <div class="god-copy">
+              <h2 id="godComposerTitle">改变这个世界</h2>
+              <p>一句话会成为真实规则，并在接下来的日子里扩散。</p>
+            </div>
+            <form id="godEventForm" novalidate>
+              <label for="godEventInput">上帝事件</label>
+              <div class="god-input-row">
+                <input id="godEventInput" name="event" maxlength="180" autocomplete="off" placeholder="例如：城外发现了黄金" />
+                <button id="interpretEventBtn" class="primary-command" type="submit">预览影响</button>
+              </div>
+              <p id="godEventError" class="form-message" role="alert" hidden></p>
+            </form>
+            <div class="event-suggestions" aria-label="常用世界事件">
+              <button type="button" data-god-event="突然发生严重经济危机">经济危机</button>
+              <button type="button" data-god-event="城外发现巨大的黄金矿脉">发现黄金</button>
+              <button type="button" data-god-event="连续七天下起暴雨">连日暴雨</button>
+              <button type="button" data-god-event="在广场举办全城庆典">全城庆典</button>
+            </div>
+          </section>
+        </section>
+
+        <aside class="story-panel" aria-label="城镇事件">
+          <header class="story-header">
+            <div>
+              <h2>正在发生</h2>
+              <p id="storySummary">所有变化都有前因和后果</p>
+            </div>
+            <div class="story-filters" role="group" aria-label="事件筛选">
+              <button type="button" data-filter="important" class="active">大事</button>
+              <button type="button" data-filter="all">全部</button>
+              <button type="button" data-filter="following">关注</button>
+            </div>
+          </header>
+          <div id="storyTimeline" class="story-timeline"></div>
+          <div id="storyEmpty" class="empty-state" hidden>
+            <strong>这里还很安静</strong>
+            <p>关注一名居民，或让时间继续前进。</p>
+          </div>
+        </aside>
+      </div>
+
+      <aside id="citizenDrawer" class="citizen-drawer" aria-label="居民详情" aria-hidden="true">
+        <header>
+          <button id="closeCitizenBtn" class="icon-button" type="button" aria-label="关闭居民详情">×</button>
+          <button id="followCitizenBtn" class="follow-button" type="button">关注此人</button>
+        </header>
+        <div id="citizenContent" class="citizen-content"></div>
+      </aside>
+
+      <dialog id="eventPreviewDialog" class="event-preview-dialog">
+        <form method="dialog" class="dialog-shell">
+          <header>
+            <div>
+              <p>上帝事件预览</p>
+              <h2 id="previewEventTitle">世界将发生变化</h2>
+            </div>
+            <button value="cancel" class="icon-button" aria-label="关闭预览">×</button>
+          </header>
+          <div id="previewEventContent" class="preview-event-content"></div>
+          <footer>
+            <button value="cancel" type="submit">再想想</button>
+            <button id="applyEventBtn" value="default" class="primary-command" type="button">施加事件</button>
+          </footer>
+        </form>
+      </dialog>
+
+      <dialog id="relationshipDialog" class="relationship-dialog">
+        <section class="dialog-shell graph-shell">
+          <header>
+            <div>
+              <p>30 名居民的社会网络</p>
+              <h2>关系图</h2>
+            </div>
+            <button id="closeRelationshipBtn" class="icon-button" type="button" aria-label="关闭关系图">×</button>
+          </header>
+          <div class="graph-toolbar" role="group" aria-label="关系类型筛选">
+            <button type="button" data-relation="all" class="active">全部</button>
+            <button type="button" data-relation="friend">朋友</button>
+            <button type="button" data-relation="love">爱慕</button>
+            <button type="button" data-relation="enemy">敌对</button>
+            <button type="button" data-relation="debt">债务</button>
+            <button type="button" data-relation="work">同事</button>
+          </div>
+          <div class="graph-stage">
+            <svg id="relationshipGraph" role="img" aria-label="居民社会关系图"></svg>
+            <p id="graphHint">点击姓名可回到地图查看居民</p>
+          </div>
+        </section>
+      </dialog>
+
+      <dialog id="saveDialog" class="save-dialog">
+        <section class="dialog-shell">
+          <header>
+            <div>
+              <p>保留这段历史</p>
+              <h2>世界存档</h2>
+            </div>
+            <button id="closeSaveBtn" class="icon-button" type="button" aria-label="关闭存档">×</button>
+          </header>
+          <div class="save-actions">
+            <button id="downloadSaveBtn" type="button">导出当前世界</button>
+            <button id="importSaveBtn" type="button">导入世界存档</button>
+            <button id="newWorldBtn" type="button">用新种子重开</button>
+            <a href="/legacy.html">进入经典冒险版</a>
+          </div>
+          <p class="save-note">城镇每个游戏日自动保存。导入失败不会覆盖当前世界。</p>
+        </section>
+      </dialog>
+
+      <input id="saveFileInput" type="file" accept="application/json" hidden />
+      <div id="toast" class="toast" aria-live="polite"></div>
+    </main>
+
+    <script type="module" src="/civilization.js?v=0.4.0"></script>
+  </body>
+</html>

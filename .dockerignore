@@ -1,0 +1,10 @@
+node_modules
+.git
+server.out.log
+server.err.log
+deepseek API Key.txt
+DEEPSEEK_API_KEY.txt
+.env
+.env.local
+docs/acceptance/screenshots
+*.local

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">绒火与月铃主视觉</title>
+  <desc id="desc">绒火站在月铃聚落前，远处是森林、河岸、遗迹和月铃塔。</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#203052" />
+      <stop offset="0.44" stop-color="#5b7188" />
+      <stop offset="1" stop-color="#f0b978" />
+    </linearGradient>
+    <linearGradient id="field" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#234c3a" />
+      <stop offset="0.5" stop-color="#4f7347" />
+      <stop offset="1" stop-color="#8d7248" />
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff8d8" />
+      <stop offset="0.7" stop-color="#ffe7a4" />
+      <stop offset="1" stop-color="#d99d4a" />
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <circle cx="1165" cy="170" r="92" fill="url(#moon)" />
+  <circle cx="1165" cy="170" r="126" fill="#ffe6a0" opacity="0.18" filter="url(#soft)" />
+
+  <path d="M0 510 C210 410 380 438 560 380 C760 314 920 352 1120 292 C1320 232 1450 282 1600 226 L1600 900 L0 900 Z" fill="#2f4560" opacity="0.72" />
+  <path d="M0 590 C230 510 440 538 650 494 C850 452 1012 486 1220 424 C1400 370 1500 398 1600 360 L1600 900 L0 900 Z" fill="#2c5f55" />
+  <path d="M0 668 C260 612 460 634 686 594 C926 552 1110 590 1320 532 C1468 490 1536 506 1600 484 L1600 900 L0 900 Z" fill="url(#field)" />
+
+  <g opacity="0.42">
+    <path d="M116 590 l34 -92 l34 92 Z" fill="#183928" />
+    <path d="M190 598 l46 -126 l46 126 Z" fill="#173523" />
+    <path d="M1290 452 l42 -132 l42 132 Z" fill="#1d3c37" />
+    <path d="M1360 448 l52 -158 l52 158 Z" fill="#173532" />
+    <path d="M1438 468 l44 -124 l44 124 Z" fill="#213c32" />
+  </g>
+
+  <g transform="translate(1020 276)">
+    <path d="M120 430 L195 430 L180 114 L136 18 L92 114 L76 430 Z" fill="#6f5b69" />
+    <path d="M94 128 L179 128 L166 430 L108 430 Z" fill="#b48668" />
+    <path d="M111 118 L161 118 L151 66 L136 26 L121 66 Z" fill="#d5b16c" />
+    <circle cx="136" cy="176" r="30" fill="#f7d988" />
+    <path d="M119 176 C128 164 144 164 153 176 C144 188 128 188 119 176 Z" fill="#684746" />
+    <path d="M71 430 L201 430 L224 478 L48 478 Z" fill="#4d3a45" />
+  </g>
+
+  <g transform="translate(380 492)">
+    <ellipse cx="188" cy="300" rx="210" ry="42" fill="#1b272c" opacity="0.28" />
+    <path d="M164 122 C188 68 244 66 272 116 C300 164 286 230 236 252 C186 274 132 244 120 190 C113 160 124 140 164 122 Z" fill="#c76745" />
+    <path d="M134 150 C86 148 52 178 48 220 C96 226 128 206 150 168 Z" fill="#d98a55" />
+    <path d="M256 142 C294 124 332 130 354 166 C320 190 286 184 258 152 Z" fill="#d98a55" />
+    <path d="M152 124 C130 72 146 44 184 68 C178 96 168 112 152 124 Z" fill="#a84b3b" />
+    <path d="M236 112 C250 56 286 48 294 94 C270 102 252 108 236 112 Z" fill="#a84b3b" />
+    <path d="M132 254 C118 324 126 374 154 412 L240 412 C274 364 282 304 250 246 C218 270 170 270 132 254 Z" fill="#3d5160" />
+    <path d="M154 412 L138 508 L178 508 L196 412 Z" fill="#7b493d" />
+    <path d="M226 412 L238 508 L278 508 L258 412 Z" fill="#7b493d" />
+    <path d="M150 298 C104 300 70 326 52 374 L88 388 C104 352 126 334 158 328 Z" fill="#c76745" />
+    <path d="M238 298 C292 302 330 338 344 390 L306 400 C294 366 272 338 232 328 Z" fill="#c76745" />
+    <path d="M170 184 C180 174 198 174 208 184 C198 196 180 196 170 184 Z" fill="#1b2024" />
+    <path d="M230 180 C240 170 258 170 268 180 C258 192 240 192 230 180 Z" fill="#1b2024" />
+    <path d="M204 204 C214 214 226 214 236 204" fill="none" stroke="#4a2224" stroke-width="8" stroke-linecap="round" />
+    <path d="M88 490 C22 426 48 352 116 350 C100 402 122 444 176 486 Z" fill="#e98a4f" />
+    <path d="M106 472 C66 426 78 386 122 378 C118 416 136 448 176 482 Z" fill="#ffd07a" opacity="0.8" />
+    <path d="M274 330 L376 270 L396 296 L302 372 Z" fill="#6e574e" />
+    <path d="M372 266 L440 220 L456 238 L402 300 Z" fill="#e7c46e" />
+  </g>
+
+  <g transform="translate(760 610)">
+    <path d="M0 118 L80 38 L160 118 L160 212 L0 212 Z" fill="#7f5a45" />
+    <path d="M198 92 L274 22 L350 92 L350 212 L198 212 Z" fill="#6a4d48" />
+    <path d="M-18 120 L80 18 L178 120 Z" fill="#b77a4e" />
+    <path d="M182 94 L274 0 L366 94 Z" fill="#a8694a" />
+    <rect x="54" y="148" width="42" height="64" fill="#352a2e" />
+    <rect x="250" y="136" width="48" height="76" fill="#2c252a" />
+    <circle cx="80" cy="92" r="20" fill="#f0d789" />
+    <circle cx="274" cy="78" r="20" fill="#f0d789" />
+  </g>
+
+  <g transform="translate(0 0)" opacity="0.9">
+    <path d="M0 772 C140 742 260 748 390 726 C530 702 650 724 790 704 C930 684 1050 650 1208 666 C1348 680 1460 724 1600 690 L1600 900 L0 900 Z" fill="#4d633d" />
+    <path d="M0 824 C210 792 350 812 520 786 C764 750 960 824 1174 782 C1364 744 1490 796 1600 778 L1600 900 L0 900 Z" fill="#2c443b" />
+  </g>
+
+  <g transform="translate(84 104)">
+    <text x="0" y="0" fill="#fff6d5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="86" font-weight="800">绒火与月铃</text>
+    <text x="4" y="62" fill="#f3d68e" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30">Furry 中世纪冒险</text>
+  </g>
+</svg>

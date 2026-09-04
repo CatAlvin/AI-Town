@@ -1,0 +1,26 @@
+{
+  "name": "moonbell-civilization",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "《月铃文明》30 名兽人居民自主生活的 AI 社会模拟器",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test",
+    "scan:secrets": "node scripts/secretScan.js",
+    "audit:deps": "npm audit --omit=dev",
+    "audit:production": "node scripts/productionAudit.js",
+    "audit:evidence": "node scripts/evidenceAudit.js",
+    "audit:acceptance": "node scripts/acceptanceAudit.js",
+    "capture:responsive": "node scripts/captureResponsiveScreenshots.js",
+    "capture:readability": "node scripts/captureReadabilityScreenshots.js",
+    "capture:memory": "node scripts/captureMemoryCurve.js",
+    "capture:browser-flow": "node scripts/captureBrowserFlowEvidence.js",
+    "capture:fps": "node scripts/captureFrameRate.js",
+    "validate": "npm test && npm run scan:secrets && npm run audit:deps && npm run audit:production && npm run audit:evidence && npm run audit:acceptance"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "title": "绒火与月铃",
+  "gameVersion": "0.3.3",
+  "generatedAt": "2026-06-26T19:33:20.297Z",
+  "command": "npm run capture:memory",
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "mode": "Microsoft Edge headless"
+  },
+  "baseUrl": "http://127.0.0.1:5198",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "cases": [
+    {
+      "id": "title",
+      "label": "标题页",
+      "path": "/"
+    },
+    {
+      "id": "village",
+      "label": "聚落 HUD",
+      "path": "/?scene=bellvale"
+    },
+    {
+      "id": "rain",
+      "label": "雨天河岸",
+      "path": "/?scene=river-weather&weather=细雨&segment=2"
+    },
+    {
+      "id": "boss",
+      "label": "首领战",
+      "path": "/?scene=moonspire-boss&weather=雾风&segment=3"
+    }
+  ],
+  "requirements": {
+    "completeCases": true,
+    "memoryWithinBudget": true,
+    "curveHasVariation": true,
+    "sampleCount": 32,
+    "maxWorkingSetMiB": 1089.05,
+    "minWorkingSetMiB": 836.27,
+    "complete": true
+  },
+  "samples": [
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 2083,
+      "processCount": 16,
+      "workingSetMiB": 886.79,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 3891,
+      "processCount": 19,
+      "workingSetMiB": 987.46,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 5718,
+      "processCount": 18,
+      "workingSetMiB": 972.02,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 7515,
+      "processCount": 18,
+      "workingSetMiB": 970.57,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 9306,
+      "processCount": 18,
+      "workingSetMiB": 971.95,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 11192,
+      "processCount": 19,
+      "workingSetMiB": 1035.1,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 13076,
+      "processCount": 18,
+      "workingSetMiB": 979.49,
+      "ok": true
+    },
+    {
+      "caseId": "title",
+      "label": "标题页",
+      "elapsedMs": 14808,
+      "processCount": 18,
+      "workingSetMiB": 990.38,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 2072,
+      "processCount": 17,
+      "workingSetMiB": 937.99,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 3904,
+      "processCount": 20,
+      "workingSetMiB": 1042.41,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 5734,
+      "processCount": 19,
+      "workingSetMiB": 1024.31,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 7460,
+      "processCount": 19,
+      "workingSetMiB": 1021.1,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 9257,
+      "processCount": 20,
+      "workingSetMiB": 1089.05,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 11122,
+      "processCount": 20,
+      "workingSetMiB": 1072.03,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 12893,
+      "processCount": 19,
+      "workingSetMiB": 1035.45,
+      "ok": true
+    },
+    {
+      "caseId": "village",
+      "label": "聚落 HUD",
+      "elapsedMs": 14874,
+      "processCount": 19,
+      "workingSetMiB": 1051.08,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 2057,
+      "processCount": 17,
+      "workingSetMiB": 933.53,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 3891,
+      "processCount": 19,
+      "workingSetMiB": 1013.46,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 5701,
+      "processCount": 19,
+      "workingSetMiB": 1021.64,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 7564,
+      "processCount": 19,
+      "workingSetMiB": 1034.65,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 9455,
+      "processCount": 19,
+      "workingSetMiB": 1031.39,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 11261,
+      "processCount": 19,
+      "workingSetMiB": 1040.07,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 13104,
+      "processCount": 18,
+      "workingSetMiB": 1007.64,
+      "ok": true
+    },
+    {
+      "caseId": "rain",
+      "label": "雨天河岸",
+      "elapsedMs": 14975,
+      "processCount": 18,
+      "workingSetMiB": 1007.59,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 1997,
+      "processCount": 15,
+      "workingSetMiB": 836.27,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 3848,
+      "processCount": 20,
+      "workingSetMiB": 1033.9,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 5632,
+      "processCount": 19,
+      "workingSetMiB": 1026.43,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 7583,
+      "processCount": 19,
+      "workingSetMiB": 1028.73,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 9393,
+      "processCount": 19,
+      "workingSetMiB": 1024.06,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 11226,
+      "processCount": 19,
+      "workingSetMiB": 1038.48,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 13126,
+      "processCount": 18,
+      "workingSetMiB": 1012.69,
+      "ok": true
+    },
+    {
+      "caseId": "boss",
+      "label": "首领战",
+      "elapsedMs": 14969,
+      "processCount": 18,
+      "workingSetMiB": 1015.49,
+      "ok": true
+    }
+  ],
+  "chart": {
+    "file": "docs/acceptance/tests/performance/memory-curve/perf03-memory-curve.png",
+    "html": "docs/acceptance/tests/performance/memory-curve/perf03-memory-curve.html",
+    "bytes": 360562,
+    "sha256": "d31f3166b6c7ff3f7e2f7e73c14ce67f0022c50822b9076e4ee701d6ed94a9fc"
+  }
+}

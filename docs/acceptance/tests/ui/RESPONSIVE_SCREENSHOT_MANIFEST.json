@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "title": "绒火与月铃",
+  "gameVersion": "0.3.3",
+  "generatedAt": "2026-06-26T10:35:34.749Z",
+  "command": "npm run capture:responsive",
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "mode": "Microsoft Edge headless"
+  },
+  "baseUrl": "http://127.0.0.1:5194",
+  "outputDir": "docs/acceptance/tests/ui/responsive-screenshots",
+  "requirements": {
+    "has1280": true,
+    "has1920": true,
+    "hasScale125": true,
+    "hasExpectedSurfaces": true,
+    "validFiles": true,
+    "complete": true
+  },
+  "files": [
+    {
+      "id": "ux03-1280x720-hud-combat",
+      "label": "1280x720 HUD 与战斗",
+      "file": "docs/acceptance/tests/ui/responsive-screenshots/ux03-1280x720-hud-combat.png",
+      "urlPath": "/?scene=forest-combat",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "deviceScaleFactor": 1,
+      "expectedDeviceSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "imageSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "bytes": 113660,
+      "sha256": "f3d73a902ef9073288ef309a9f2dd2e78bf3938e866583332270b2a197cf7c74",
+      "surfaces": [
+        "hud",
+        "combat"
+      ],
+      "valid": true
+    },
+    {
+      "id": "ux03-1920x1080-quest",
+      "label": "1920x1080 任务日志",
+      "file": "docs/acceptance/tests/ui/responsive-screenshots/ux03-1920x1080-quest.png",
+      "urlPath": "/?scene=river-weather&panel=quest",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "deviceScaleFactor": 1,
+      "expectedDeviceSize": {
+        "width": 1920,
+        "height": 1080
+      },
+      "imageSize": {
+        "width": 1920,
+        "height": 1080
+      },
+      "bytes": 327106,
+      "sha256": "c838cefcbd9ea6a3a4a81ecfe2fb39a9e38c7a0193abdba5af138530245baf12",
+      "surfaces": [
+        "hud",
+        "quest"
+      ],
+      "valid": true
+    },
+    {
+      "id": "ux03-1280x720-scale125-inventory",
+      "label": "1280x720 125% 缩放背包",
+      "file": "docs/acceptance/tests/ui/responsive-screenshots/ux03-1280x720-scale125-inventory.png",
+      "urlPath": "/?scene=moonspire-boss&panel=inventory",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "deviceScaleFactor": 1.25,
+      "expectedDeviceSize": {
+        "width": 1600,
+        "height": 900
+      },
+      "imageSize": {
+        "width": 1600,
+        "height": 900
+      },
+      "bytes": 141373,
+      "sha256": "fe961d606ecb33135e00c6543f81b9ad9c1b06d9f8e64642b5b3d40ef574fae1",
+      "surfaces": [
+        "hud",
+        "inventory",
+        "combat"
+      ],
+      "valid": true
+    }
+  ]
+}

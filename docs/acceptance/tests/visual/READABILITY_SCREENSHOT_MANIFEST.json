@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "title": "绒火与月铃",
+  "gameVersion": "0.3.3",
+  "generatedAt": "2026-06-26T13:09:30.847Z",
+  "command": "npm run capture:readability",
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "mode": "Microsoft Edge headless"
+  },
+  "baseUrl": "http://127.0.0.1:5196",
+  "outputDir": "docs/acceptance/tests/visual/readability-screenshots",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "requirements": {
+    "hasAllSurfaces": true,
+    "validFiles": true,
+    "uniqueHashes": true,
+    "complete": true
+  },
+  "files": [
+    {
+      "id": "art06-daylight-hud",
+      "label": "白天 HUD 与交互提示",
+      "file": "docs/acceptance/tests/visual/readability-screenshots/art06-daylight-hud.png",
+      "urlPath": "/?scene=forest-combat&weather=晴朗&segment=0&brightness=1",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "imageSize": {
+        "width": 1366,
+        "height": 768
+      },
+      "bytes": 126793,
+      "sha256": "587211352b9c617e19f46ae53be9d677b7e96cf1f7f5cbf5d4bdd25a29364283",
+      "surfaces": [
+        "daylight",
+        "hud",
+        "interaction",
+        "combat"
+      ],
+      "metrics": {
+        "averageLuminance": 180.72,
+        "p10": 130.53,
+        "p90": 250.92,
+        "contrastSpread": 120.38,
+        "darkRatio": 0.0002,
+        "brightRatio": 0.3774,
+        "ok": true
+      },
+      "valid": true
+    },
+    {
+      "id": "art06-night-fog-boss",
+      "label": "深夜雾风首领场景",
+      "file": "docs/acceptance/tests/visual/readability-screenshots/art06-night-fog-boss.png",
+      "urlPath": "/?scene=moonspire-boss&weather=雾风&segment=3&brightness=0.78",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "imageSize": {
+        "width": 1366,
+        "height": 768
+      },
+      "bytes": 115639,
+      "sha256": "ebe091a0d6198d031730f0b05bc37e9bd7be9a207ce9ae199ec9af6948f90e7c",
+      "surfaces": [
+        "night",
+        "fog",
+        "boss",
+        "hud"
+      ],
+      "metrics": {
+        "averageLuminance": 165.72,
+        "p10": 102.81,
+        "p90": 250.92,
+        "contrastSpread": 148.1,
+        "darkRatio": 0.0002,
+        "brightRatio": 0.3735,
+        "ok": true
+      },
+      "valid": true
+    },
+    {
+      "id": "art06-rain-quest-text",
+      "label": "雨天任务文字",
+      "file": "docs/acceptance/tests/visual/readability-screenshots/art06-rain-quest-text.png",
+      "urlPath": "/?scene=river-weather&weather=细雨&segment=2&brightness=0.95&panel=quest",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "imageSize": {
+        "width": 1366,
+        "height": 768
+      },
+      "bytes": 143659,
+      "sha256": "ff03888263073b8dbb6c5f0ea27379d7703fcb971b04778bf650c3ba09e9ae29",
+      "surfaces": [
+        "rain",
+        "quest",
+        "text",
+        "hud"
+      ],
+      "metrics": {
+        "averageLuminance": 188.27,
+        "p10": 115.12,
+        "p90": 244.33,
+        "contrastSpread": 129.21,
+        "darkRatio": 0.0012,
+        "brightRatio": 0.5051,
+        "ok": true
+      },
+      "valid": true
+    },
+    {
+      "id": "art06-dense-combat-warning",
+      "label": "战斗特效密集可读性",
+      "file": "docs/acceptance/tests/visual/readability-screenshots/art06-dense-combat-warning.png",
+      "urlPath": "/?scene=ruins-boss&weather=雾风&segment=3&brightness=0.82",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "imageSize": {
+        "width": 1366,
+        "height": 768
+      },
+      "bytes": 116581,
+      "sha256": "7fc04a0d9672191665be4e9989bf6bf96bdf18dd81501d2be738a09c5e91c928",
+      "surfaces": [
+        "combat",
+        "warning",
+        "enemy",
+        "hud"
+      ],
+      "metrics": {
+        "averageLuminance": 175.49,
+        "p10": 102.29,
+        "p90": 250.92,
+        "contrastSpread": 148.63,
+        "darkRatio": 0.0002,
+        "brightRatio": 0.3756,
+        "ok": true
+      },
+      "valid": true
+    }
+  ]
+}

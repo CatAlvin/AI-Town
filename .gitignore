@@ -1,0 +1,8 @@
+node_modules/
+npm-debug.log*
+.env
+.env.local
+deepseek API Key.txt
+DEEPSEEK_API_KEY.txt
+*.local
+*.log
