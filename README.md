@@ -33,16 +33,19 @@ $env:PORT="5174"
 npm start
 ```
 
-核心模拟可完全离线运行。若要让 DeepSeek 解释自由输入的世界事件，可在启动前设置：
+核心模拟可完全离线运行。若要让 Kimi K3 解释自由输入的世界事件，可在启动前设置：
 
 ```powershell
-$env:DEEPSEEK_API_KEY="你的 API Key"
+$env:LLM_PROVIDER="kimi"
+$env:LLM_API_KEY="你的 API Key"
+$env:LLM_API_URL="https://api.moonshot.cn/v1/chat/completions"
+$env:LLM_MODEL="kimi-k3"
 npm start
 ```
 
 ## AI 辅助
 
-运行时 AI 只把自由文本映射为受控的世界事件，居民行为、社会演化和存档由本地规则驱动。开发过程使用 AI 辅助内容设计、实现与测试，最终规则和体验由作者确认。
+运行时 Kimi 只把自由文本映射为受控的世界事件，居民行为、社会演化和存档由本地规则驱动。开发过程使用 AI 辅助内容设计、实现与测试，最终规则和体验由作者确认。
 
 ## 验证
 

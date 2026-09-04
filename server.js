@@ -10,10 +10,14 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const publicDir = resolve(__dirname, "public");
 const srcDir = resolve(__dirname, "src");
 const port = Number(process.env.PORT || 5173);
-const deepSeekApiUrl = process.env.DEEPSEEK_API_URL || "https://api.deepseek.com/chat/completions";
-const deepSeekModel = process.env.DEEPSEEK_MODEL || "deepseek-chat";
+const host = process.env.HOST || "127.0.0.1";
+const llmProvider = process.env.LLM_PROVIDER || "deepseek";
+const deepSeekApiUrl = process.env.LLM_API_URL || process.env.DEEPSEEK_API_URL || "https://api.deepseek.com/chat/completions";
+const deepSeekModel = process.env.LLM_MODEL || process.env.DEEPSEEK_MODEL || "deepseek-chat";
+const llmTemperature = Number(process.env.LLM_TEMPERATURE || (llmProvider === "kimi" ? 1 : 0.7));
+const llmMaxTokens = Number(process.env.LLM_MAX_TOKENS || (llmProvider === "kimi" ? 1600 : 260));
 const requestLimitBytes = Number(process.env.REQUEST_BODY_LIMIT_BYTES || 64 * 1024);
-const llmTimeoutMs = Number(process.env.LLM_TIMEOUT_MS || 1800);
+const llmTimeoutMs = Number(process.env.LLM_TIMEOUT_MS || (llmProvider === "kimi" ? 60000 : 1800));
 const quotaLimit = Number(process.env.LLM_SESSION_LIMIT || 24);
 const rateWindowMs = Number(process.env.RATE_WINDOW_MS || 60_000);
 const rateLimit = Number(process.env.RATE_LIMIT || 90);
@@ -47,7 +51,11 @@ const server = createServer(async (request, response) => {
         buildDate,
         buildCommit,
         core: { status: "ok", staticFiles: existsSync(resolve(publicDir, "index.html")) },
-        optionalLLM: { status: readDeepSeekKey() ? "configured" : "not-configured" },
+        optionalLLM: {
+          status: readDeepSeekKey() ? "configured" : "not-configured",
+          provider: llmProvider,
+          model: deepSeekModel,
+        },
         limits: { requestLimitBytes, quotaLimit, rateLimit, rateWindowMs },
       });
     }
@@ -80,7 +88,7 @@ const server = createServer(async (request, response) => {
         try {
           const rumor = await requestDeepSeekRumor(body);
           logLine("info", "llm_rumor_success", { requestId, ms: Date.now() - startedAt });
-          return sendJson(response, { source: "deepseek", rumor });
+          return sendJson(response, { source: llmProvider, rumor });
         } catch (error) {
           logLine("warn", "llm_rumor_fallback", { requestId, category: error.name || "Error", ms: Date.now() - startedAt });
           return sendJson(response, {
@@ -118,7 +126,7 @@ const server = createServer(async (request, response) => {
       try {
         const plan = await requestDeepSeekCivilizationEvent({ ...body, text });
         logLine("info", "llm_civilization_event_success", { requestId, type: plan.type, ms: Date.now() - startedAt });
-        return sendJson(response, { source: "deepseek", plan });
+        return sendJson(response, { source: llmProvider, plan });
       } catch (error) {
         logLine("warn", "llm_civilization_event_failed", {
           requestId,
@@ -146,9 +154,9 @@ const server = createServer(async (request, response) => {
   }
 });
 
-server.listen(port, () => {
-  console.log(`${CIVILIZATION_TITLE} 已启动：http://localhost:${port}`);
-  console.log(readDeepSeekKey() ? "DeepSeek 神谕理解已启用。" : "未配置 DEEPSEEK_API_KEY，模拟器将使用完整的本地确定性内容。");
+server.listen(port, host, () => {
+  console.log(`${CIVILIZATION_TITLE} 已启动：http://${host}:${port}`);
+  console.log(readDeepSeekKey() ? `${llmProvider} 神谕理解已启用。` : "未配置 LLM API Key，模拟器将使用完整的本地确定性内容。");
 });
 
 async function requestDeepSeekRumor(context) {
@@ -165,8 +173,8 @@ async function requestDeepSeekRumor(context) {
       },
       body: JSON.stringify({
         model: deepSeekModel,
-        temperature: 0.7,
-        max_tokens: 220,
+        temperature: llmTemperature,
+        max_tokens: llmMaxTokens,
         response_format: { type: "json_object" },
         messages: [
           {
@@ -205,8 +213,8 @@ async function requestDeepSeekCivilizationEvent(context) {
       },
       body: JSON.stringify({
         model: deepSeekModel,
-        temperature: 0.25,
-        max_tokens: 260,
+        temperature: llmTemperature,
+        max_tokens: llmMaxTokens,
         response_format: { type: "json_object" },
         messages: [
           {
@@ -225,7 +233,7 @@ async function requestDeepSeekCivilizationEvent(context) {
     const payload = await result.json();
     const content = payload?.choices?.[0]?.message?.content;
     if (!content) throw new Error("LLM empty content");
-    return validateGodEventPlan({ ...JSON.parse(content), source: "deepseek", originalText: context.text });
+    return validateGodEventPlan({ ...JSON.parse(content), source: llmProvider, originalText: context.text });
   } finally {
     clearTimeout(timeout);
   }
@@ -276,7 +284,7 @@ function buildCivilizationEventPrompt(context) {
 }
 
 function readDeepSeekKey() {
-  return process.env.DEEPSEEK_API_KEY?.trim() || "";
+  return process.env.LLM_API_KEY?.trim() || process.env.DEEPSEEK_API_KEY?.trim() || "";
 }
 
 async function readJsonBody(request) {

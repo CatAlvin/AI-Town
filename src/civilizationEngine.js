@@ -476,7 +476,7 @@ export function validateGodEventPlan(value) {
     intensity,
     duration,
     originalText: String(plan.originalText || "").slice(0, 180),
-    source: plan.source === "deepseek" ? "deepseek" : "local",
+    source: ["deepseek", "kimi"].includes(plan.source) ? plan.source : "local",
   };
 }
 
