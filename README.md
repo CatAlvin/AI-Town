@@ -2,6 +2,8 @@
 
 《月铃文明》是一款中文 AI 社会观赏模拟器。30 名不同种族的兽人居民会自主工作、交友、借债、争执、犯罪、调查和参选；玩家也可以施加世界事件，观察社会指标与历史走向。
 
+*A Chinese AI society simulation where 30 autonomous furry residents work, form relationships, commit crimes, investigate events, and shape local politics.*
+
 ## 版本与进度
 
 - 当前版本：**0.4.0**
